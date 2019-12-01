@@ -1,5 +1,5 @@
 # The Gems
-This is a game made for GithubGameOff 2019 - a web-based game using the Phaser 3 engine, Typescript, and Webpack. Play the game [here](https://sharpfives.itch.io/phaser3-starter).
+This is a game made for GithubGameOff 2019 - a web-based game using the Phaser 3 engine, Typescript, and Webpack. Play the game [here](https://sharpfives.itch.io/gems).
 
 ## Project Structure
 All code goes in <code>src/</code>, all resources (images, music, etc.) go in <code>resources/</code>.
