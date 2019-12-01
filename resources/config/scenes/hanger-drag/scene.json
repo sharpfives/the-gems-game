@@ -1,0 +1,10 @@
+{
+  "name" : "",
+	"tilemap" : "resources/config/scenes/hanger-drag/tilemap.json",
+	"imagesRootDir" : "resources/images/scenes/hanger-drag",
+  "images" : {
+		"grass1" : "../test/grass1.png",
+		"grass2" : "../test2/grass2.png",
+		"test-tree" : "../test/test-tree.png"
+  }
+}

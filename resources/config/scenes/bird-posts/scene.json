@@ -1,0 +1,11 @@
+{
+  "name" : "",
+	"tilemap" : "resources/config/scenes/bird-posts/tilemap.json",
+	"imagesRootDir" : "resources/",
+  "images" : {
+		"pole3" : "pole3.png",
+		"pole4" : "pole4.png",
+		"grass1" : "grass1.png",
+		"grass2" : "grass2.png"
+  }
+}

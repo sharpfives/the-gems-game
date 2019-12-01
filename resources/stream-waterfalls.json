@@ -1,0 +1,158 @@
+{ "frames": {
+   "stream-waterfalls 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 600, "h": 438 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 600, "h": 438 },
+    "sourceSize": { "w": 600, "h": 438 },
+    "duration": 100
+   },
+   "stream-waterfalls 1.aseprite": {
+    "frame": { "x": 600, "y": 0, "w": 600, "h": 438 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 600, "h": 438 },
+    "sourceSize": { "w": 600, "h": 438 },
+    "duration": 100
+   },
+   "stream-waterfalls 2.aseprite": {
+    "frame": { "x": 1200, "y": 0, "w": 600, "h": 438 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 600, "h": 438 },
+    "sourceSize": { "w": 600, "h": 438 },
+    "duration": 100
+   },
+   "stream-waterfalls 3.aseprite": {
+    "frame": { "x": 1800, "y": 0, "w": 600, "h": 438 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 600, "h": 438 },
+    "sourceSize": { "w": 600, "h": 438 },
+    "duration": 100
+   },
+   "stream-waterfalls 4.aseprite": {
+    "frame": { "x": 2400, "y": 0, "w": 600, "h": 438 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 600, "h": 438 },
+    "sourceSize": { "w": 600, "h": 438 },
+    "duration": 100
+   },
+   "stream-waterfalls 5.aseprite": {
+    "frame": { "x": 3000, "y": 0, "w": 600, "h": 438 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 600, "h": 438 },
+    "sourceSize": { "w": 600, "h": 438 },
+    "duration": 100
+   },
+   "stream-waterfalls 6.aseprite": {
+    "frame": { "x": 3600, "y": 0, "w": 600, "h": 438 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 600, "h": 438 },
+    "sourceSize": { "w": 600, "h": 438 },
+    "duration": 100
+   },
+   "stream-waterfalls 7.aseprite": {
+    "frame": { "x": 4200, "y": 0, "w": 600, "h": 438 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 600, "h": 438 },
+    "sourceSize": { "w": 600, "h": 438 },
+    "duration": 100
+   },
+   "stream-waterfalls 8.aseprite": {
+    "frame": { "x": 4800, "y": 0, "w": 600, "h": 438 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 600, "h": 438 },
+    "sourceSize": { "w": 600, "h": 438 },
+    "duration": 100
+   },
+   "stream-waterfalls 9.aseprite": {
+    "frame": { "x": 5400, "y": 0, "w": 600, "h": 438 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 600, "h": 438 },
+    "sourceSize": { "w": 600, "h": 438 },
+    "duration": 100
+   },
+   "stream-waterfalls 10.aseprite": {
+    "frame": { "x": 6000, "y": 0, "w": 600, "h": 438 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 600, "h": 438 },
+    "sourceSize": { "w": 600, "h": 438 },
+    "duration": 100
+   },
+   "stream-waterfalls 11.aseprite": {
+    "frame": { "x": 6600, "y": 0, "w": 600, "h": 438 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 600, "h": 438 },
+    "sourceSize": { "w": 600, "h": 438 },
+    "duration": 100
+   },
+   "stream-waterfalls 12.aseprite": {
+    "frame": { "x": 7200, "y": 0, "w": 600, "h": 438 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 600, "h": 438 },
+    "sourceSize": { "w": 600, "h": 438 },
+    "duration": 100
+   },
+   "stream-waterfalls 13.aseprite": {
+    "frame": { "x": 7800, "y": 0, "w": 600, "h": 438 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 600, "h": 438 },
+    "sourceSize": { "w": 600, "h": 438 },
+    "duration": 100
+   },
+   "stream-waterfalls 14.aseprite": {
+    "frame": { "x": 8400, "y": 0, "w": 600, "h": 438 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 600, "h": 438 },
+    "sourceSize": { "w": 600, "h": 438 },
+    "duration": 100
+   },
+   "stream-waterfalls 15.aseprite": {
+    "frame": { "x": 9000, "y": 0, "w": 600, "h": 438 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 600, "h": 438 },
+    "sourceSize": { "w": 600, "h": 438 },
+    "duration": 100
+   },
+   "stream-waterfalls 16.aseprite": {
+    "frame": { "x": 9600, "y": 0, "w": 600, "h": 438 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 600, "h": 438 },
+    "sourceSize": { "w": 600, "h": 438 },
+    "duration": 100
+   },
+   "stream-waterfalls 17.aseprite": {
+    "frame": { "x": 10200, "y": 0, "w": 600, "h": 438 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 600, "h": 438 },
+    "sourceSize": { "w": 600, "h": 438 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.15",
+  "image": "stream-waterfalls.png",
+  "format": "RGBA8888",
+  "size": { "w": 10800, "h": 438 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "play", "from": 0, "to": 17, "direction": "forward" }
+  ]
+ }
+}

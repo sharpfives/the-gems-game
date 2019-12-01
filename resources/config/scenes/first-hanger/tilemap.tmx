@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="4" nextobjectid="5">
+ <tileset firstgid="1" name="tileset" tilewidth="426" tileheight="378" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <properties>
+    <property name="key" value="tree"/>
+   </properties>
+   <image width="426" height="378" source="../../../images/scenes/test/test-tree.png"/>
+  </tile>
+ </tileset>
+ <objectgroup id="2" name="exits">
+  <object id="2" name="hang-point" x="390" y="248">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="objects">
+  <object id="1" gid="1" x="329" y="449" width="426" height="378"/>
+ </objectgroup>
+</map>

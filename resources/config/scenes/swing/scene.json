@@ -1,0 +1,9 @@
+{
+  "name" : "Swing Scene",
+	"tilemap" : "resources/config/scenes/swing/tilemap.json",
+	"imagesRootDir" : "resources/images/scenes/swing",
+  "images" : {
+		"grass" : "../test/grass1.png",
+		"tree-swing" : "tree-swing.png"
+  }
+}

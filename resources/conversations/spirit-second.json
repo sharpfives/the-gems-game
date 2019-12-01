@@ -1,0 +1,22 @@
+[
+	{ 
+		"text" : "what now?",
+		"responses" : [
+			{
+				"i don't really get what's happening" : [
+					{
+						"key" : "clarify"
+					}
+				]
+			},
+			{
+				"i'm gonna need a weapon" : [
+					{
+						"key" : "weapon"
+					}
+				]
+			}
+		]
+	}
+
+]

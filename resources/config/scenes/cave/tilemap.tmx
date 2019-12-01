@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="7" nextobjectid="6">
+ <tileset firstgid="1" name="tileset" tilewidth="378" tileheight="276" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="1">
+   <properties>
+    <property name="key" value="cave-entrance"/>
+   </properties>
+   <image width="378" height="276" source="../../../images/scenes/cave/cave-entrance.png"/>
+  </tile>
+ </tileset>
+ <objectgroup id="2" name="exits">
+  <object id="1" name="start" x="753" y="331">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="objects">
+  <object id="2" gid="2" x="457" y="431" width="378" height="276"/>
+  <object id="5" name="1" type="acorn" x="252" y="420">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="areas">
+  <object id="3" name="exit" type="ExitArea" x="678" y="350">
+   <polygon points="0,0 16,-107 50,-157 99,-139 123,-66 127,6"/>
+  </object>
+ </objectgroup>
+</map>

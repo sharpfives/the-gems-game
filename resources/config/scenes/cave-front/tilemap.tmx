@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="9" nextobjectid="15">
+ <tileset firstgid="1" name="tileset" tilewidth="498" tileheight="564" tilecount="5" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <properties>
+    <property name="key" value="grass1"/>
+   </properties>
+   <image width="54" height="60" source="../../../grass1.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="key" value="grass2"/>
+   </properties>
+   <image width="30" height="42" source="../../../grass2.png"/>
+  </tile>
+  <tile id="2" type="CaveFront">
+   <properties>
+    <property name="key" value="cave-front"/>
+    <property name="yOffset" type="int" value="-1000"/>
+   </properties>
+   <image width="498" height="564" source="../../../cave-front-single.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="125.954" y="19.5139">
+     <polygon points="-125.954,-23.0619 134,21 251,65 303,148 346,241 247,325.096 109.774,414.548 -126.728,472.322"/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="key" value="tree5"/>
+    <property name="yOffset" type="int" value="312"/>
+   </properties>
+   <image width="324" height="360" source="../../../tree5.png"/>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="key" value="rock"/>
+    <property name="yOffset" type="int" value="-1000"/>
+   </properties>
+   <image width="102" height="120" source="../../../rock.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="0">
+     <polygon points="15.9659,14.1919 77.1641,21.2879 92.168,81.6241 57.6502,86.2941 14.1919,88.0681"/>
+    </object>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <objectgroup id="5" name="objects">
+  <object id="1" gid="3" x="-108" y="594" width="372" height="564"/>
+  <object id="2" gid="4" x="492" y="450" width="324" height="360"/>
+ </objectgroup>
+ <objectgroup id="8" name="rocks">
+  <object id="11" gid="5" x="318" y="366" width="102" height="120">
+   <properties>
+    <property name="uniqueKey" value="rock4"/>
+   </properties>
+  </object>
+  <object id="12" gid="5" x="264" y="408" width="102" height="120">
+   <properties>
+    <property name="uniqueKey" value="rock3"/>
+   </properties>
+  </object>
+  <object id="13" gid="5" x="-12" y="546" width="102" height="120">
+   <properties>
+    <property name="uniqueKey" value="rock1"/>
+   </properties>
+  </object>
+  <object id="14" gid="5" x="48" y="516" width="102" height="120">
+   <properties>
+    <property name="uniqueKey" value="rock2"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="points">
+  <object id="7" name="cave" x="180" y="387">
+   <point/>
+  </object>
+  <object id="8" name="start" x="702" y="486">
+   <point/>
+  </object>
+  <object id="9" name="outside-cave" x="222" y="438">
+   <point/>
+  </object>
+  <object id="10" name="bird" x="540" y="240">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="grass">
+  <object id="3" gid="2" x="738" y="438" width="30" height="42"/>
+  <object id="4" gid="2" x="495" y="444" width="30" height="42"/>
+  <object id="5" gid="1" x="252" y="426" width="54" height="54"/>
+  <object id="6" gid="1" x="138" y="516" width="54" height="54"/>
+ </objectgroup>
+</map>

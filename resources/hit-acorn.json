@@ -1,0 +1,54 @@
+{ "frames": {
+   "hit-acorn 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "hit-acorn 1.aseprite": {
+    "frame": { "x": 180, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 100
+   },
+   "hit-acorn 2.aseprite": {
+    "frame": { "x": 360, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 100
+   },
+   "hit-acorn 3.aseprite": {
+    "frame": { "x": 540, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 100
+   },
+   "hit-acorn 4.aseprite": {
+    "frame": { "x": 720, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 1000
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.15",
+  "image": "hit-acorn.png",
+  "format": "RGBA8888",
+  "size": { "w": 900, "h": 180 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "play", "from": 0, "to": 4, "direction": "forward" }
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+{
+  "name" : "",
+	"tilemap" : "resources/config/scenes/acorn-tree/tilemap.json",
+	"imagesRootDir" : "resources/",
+  "images" : {
+		"tree3" : "tree3.png",
+		"grass1" : "grass1.png",
+		"grass2" : "grass2.png"
+  }
+}

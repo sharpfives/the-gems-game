@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="5" nextobjectid="16">
+ <tileset firstgid="1" name="tileset" tilewidth="210" tileheight="240" tilecount="8" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <properties>
+    <property name="key" value="grass1"/>
+   </properties>
+   <image width="54" height="60" source="../../../grass1.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="key" value="grass2"/>
+   </properties>
+   <image width="30" height="42" source="../../../grass2.png"/>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="key" value="pillar-double1"/>
+    <property name="yOffset" type="int" value="133"/>
+   </properties>
+   <image width="210" height="204" source="../../../pillar-double1.png"/>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="key" value="pillar-double2"/>
+    <property name="yOffset" type="int" value="134"/>
+   </properties>
+   <image width="192" height="204" source="../../../pillar-double2.png"/>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="key" value="pillar1"/>
+    <property name="yOffset" type="int" value="112"/>
+   </properties>
+   <image width="54" height="162" source="../../../pillar1.png"/>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="key" value="pillar2"/>
+    <property name="yOffset" type="int" value="70"/>
+   </properties>
+   <image width="54" height="96" source="../../../pillar2.png"/>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="key" value="pillar3"/>
+    <property name="yOffset" type="int" value="180"/>
+   </properties>
+   <image width="60" height="240" source="../../../pillar3.png"/>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="key" value="pillar4"/>
+    <property name="yOffset" type="int" value="130"/>
+   </properties>
+   <image width="42" height="180" source="../../../pillar4.png"/>
+  </tile>
+ </tileset>
+ <objectgroup id="2" name="points" locked="1">
+  <object id="1" name="start" x="426" y="402">
+   <point/>
+  </object>
+  <object id="2" name="dude" x="564" y="402">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="mushrooms">
+  <object id="13" name="1" type="mushroom" x="270" y="312">
+   <point/>
+  </object>
+  <object id="14" name="3" type="mushroom" x="558" y="534">
+   <point/>
+  </object>
+  <object id="15" name="2" type="mushroom" x="516" y="546">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="objects" locked="1">
+  <object id="3" gid="3" x="184" y="372" width="210" height="204"/>
+  <object id="4" gid="4" x="482" y="375" width="192" height="204"/>
+  <object id="5" gid="8" x="616" y="582" width="42" height="180"/>
+  <object id="6" gid="6" x="586" y="589" width="54" height="96"/>
+  <object id="7" gid="1" x="525" y="524" width="54" height="60"/>
+  <object id="8" gid="5" x="188" y="600" width="54" height="162"/>
+  <object id="9" gid="2" x="251" y="531" width="30" height="42"/>
+  <object id="11" gid="2" x="557" y="351" width="30" height="42"/>
+  <object id="12" gid="2" x="192" y="366" width="30" height="42"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="4" nextobjectid="10">
+ <tileset firstgid="1" name="tileset" tilewidth="36" tileheight="96" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <properties>
+    <property name="key" value="post"/>
+   </properties>
+   <image width="36" height="96" source="../../../images/scenes/training/post.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="8" y="63">
+     <polygon points="0,0 -1,-49 19,-49 22,2"/>
+    </object>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <objectgroup id="2" name="posts">
+  <object id="1" gid="1" x="226" y="268" width="36" height="96"/>
+  <object id="2" gid="1" x="95" y="444" width="36" height="96"/>
+  <object id="3" gid="1" x="295" y="594" width="36" height="96"/>
+  <object id="4" gid="1" x="523" y="600" width="36" height="96"/>
+  <object id="5" gid="1" x="706" y="435" width="36" height="96"/>
+  <object id="6" gid="1" x="563" y="266" width="36" height="96"/>
+ </objectgroup>
+ <objectgroup id="3" name="areas">
+  <object id="7" name="start" x="398" y="343">
+   <point/>
+  </object>
+  <object id="8" name="first-target" x="76" y="231">
+   <point/>
+  </object>
+  <object id="9" name="second-target" x="764" y="236">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

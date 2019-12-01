@@ -1,0 +1,34 @@
+[
+	{ 
+		"text" : "what now?",
+		"responses" : [
+			{
+				"i need more bow practice" : [
+					{
+						"text" : "ok, let me show you the ropes"
+					},
+					{
+						"end" : "training"
+					}
+				]
+			},
+			{
+				"could you explain one more time?" : [
+					{
+						"key" : "clarify"
+					}
+				]
+			},
+			{
+				"i'm good" : [
+					{
+						"text" : "good"
+					},
+					{
+						"end" : 0
+					}
+				]
+			}
+		]
+	}
+]

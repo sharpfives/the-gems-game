@@ -1,0 +1,31 @@
+{ "frames": {
+   "acorn-small 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 54, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 54, "h": 60 },
+    "sourceSize": { "w": 54, "h": 60 },
+    "duration": 100
+   },
+   "acorn-small 1.aseprite": {
+    "frame": { "x": 54, "y": 0, "w": 54, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 54, "h": 60 },
+    "sourceSize": { "w": 54, "h": 60 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.15",
+  "image": "acorn-small.png",
+  "format": "RGBA8888",
+  "size": { "w": 108, "h": 60 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "ground", "from": 0, "to": 0, "direction": "forward" },
+   { "name": "air", "from": 1, "to": 1, "direction": "forward" }
+  ]
+ }
+}

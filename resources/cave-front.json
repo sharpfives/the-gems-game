@@ -1,0 +1,127 @@
+{ "frames": {
+   "cave-front 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 498, "h": 564 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 498, "h": 564 },
+    "sourceSize": { "w": 498, "h": 564 },
+    "duration": 66
+   },
+   "cave-front 1.aseprite": {
+    "frame": { "x": 498, "y": 0, "w": 498, "h": 564 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 498, "h": 564 },
+    "sourceSize": { "w": 498, "h": 564 },
+    "duration": 66
+   },
+   "cave-front 2.aseprite": {
+    "frame": { "x": 996, "y": 0, "w": 498, "h": 564 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 498, "h": 564 },
+    "sourceSize": { "w": 498, "h": 564 },
+    "duration": 66
+   },
+   "cave-front 3.aseprite": {
+    "frame": { "x": 1494, "y": 0, "w": 498, "h": 564 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 498, "h": 564 },
+    "sourceSize": { "w": 498, "h": 564 },
+    "duration": 66
+   },
+   "cave-front 4.aseprite": {
+    "frame": { "x": 1992, "y": 0, "w": 498, "h": 564 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 498, "h": 564 },
+    "sourceSize": { "w": 498, "h": 564 },
+    "duration": 66
+   },
+   "cave-front 5.aseprite": {
+    "frame": { "x": 2490, "y": 0, "w": 498, "h": 564 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 498, "h": 564 },
+    "sourceSize": { "w": 498, "h": 564 },
+    "duration": 66
+   },
+   "cave-front 6.aseprite": {
+    "frame": { "x": 2988, "y": 0, "w": 498, "h": 564 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 498, "h": 564 },
+    "sourceSize": { "w": 498, "h": 564 },
+    "duration": 66
+   },
+   "cave-front 7.aseprite": {
+    "frame": { "x": 3486, "y": 0, "w": 498, "h": 564 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 498, "h": 564 },
+    "sourceSize": { "w": 498, "h": 564 },
+    "duration": 66
+   },
+   "cave-front 8.aseprite": {
+    "frame": { "x": 3984, "y": 0, "w": 498, "h": 564 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 498, "h": 564 },
+    "sourceSize": { "w": 498, "h": 564 },
+    "duration": 66
+   },
+   "cave-front 9.aseprite": {
+    "frame": { "x": 4482, "y": 0, "w": 498, "h": 564 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 498, "h": 564 },
+    "sourceSize": { "w": 498, "h": 564 },
+    "duration": 66
+   },
+   "cave-front 10.aseprite": {
+    "frame": { "x": 4980, "y": 0, "w": 498, "h": 564 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 498, "h": 564 },
+    "sourceSize": { "w": 498, "h": 564 },
+    "duration": 66
+   },
+   "cave-front 11.aseprite": {
+    "frame": { "x": 5478, "y": 0, "w": 498, "h": 564 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 498, "h": 564 },
+    "sourceSize": { "w": 498, "h": 564 },
+    "duration": 66
+   },
+   "cave-front 12.aseprite": {
+    "frame": { "x": 5976, "y": 0, "w": 498, "h": 564 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 498, "h": 564 },
+    "sourceSize": { "w": 498, "h": 564 },
+    "duration": 66
+   },
+   "cave-front 13.aseprite": {
+    "frame": { "x": 6474, "y": 0, "w": 498, "h": 564 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 498, "h": 564 },
+    "sourceSize": { "w": 498, "h": 564 },
+    "duration": 66
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.15",
+  "image": "cave-front.png",
+  "format": "RGBA8888",
+  "size": { "w": 6972, "h": 564 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "open", "from": 0, "to": 12, "direction": "forward" },
+   { "name": "stay-open", "from": 13, "to": 13, "direction": "forward" }
+  ]
+ }
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="5" nextobjectid="13">
+ <tileset firstgid="1" name="tileset" tilewidth="558" tileheight="264" tilecount="5" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <properties>
+   <property name="key" value="tree2"/>
+  </properties>
+  <tile id="0">
+   <properties>
+    <property name="key" value="tree2"/>
+    <property name="yOffset" type="int" value="241"/>
+   </properties>
+   <image width="180" height="264" source="../../../tree2.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="key" value="grass1"/>
+   </properties>
+   <image width="54" height="60" source="../../../grass1.png"/>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="key" value="grass2"/>
+   </properties>
+   <image width="30" height="42" source="../../../grass2.png"/>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="key" value="clouds"/>
+   </properties>
+   <image width="558" height="198" source="../../../clouds.png"/>
+  </tile>
+  <tile id="4" type="GroundAcorn">
+   <properties>
+    <property name="key" value="acorn"/>
+   </properties>
+   <image width="108" height="60" source="../../../acorn-small.png"/>
+  </tile>
+ </tileset>
+ <objectgroup id="2" name="objects">
+  <object id="1" gid="1" x="324" y="450" width="180" height="264"/>
+  <object id="10" gid="4" x="132" y="252" width="558" height="198"/>
+ </objectgroup>
+ <objectgroup id="3" name="grass">
+  <object id="3" gid="3" x="282" y="418" width="30" height="42"/>
+  <object id="4" gid="2" x="325" y="483" width="54" height="54"/>
+  <object id="7" gid="3" x="522" y="462" width="30" height="42"/>
+ </objectgroup>
+ <objectgroup id="4" name="points">
+  <object id="5" name="start" x="180" y="396">
+   <point/>
+  </object>
+  <object id="8" name="intro" x="180" y="396">
+   <point/>
+  </object>
+  <object id="12" name="0" type="mushroom" x="480" y="426">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,500 @@
+{
+  "sceneData" : {
+		"Test" : {
+      "type" : "base",
+      "config" : "resources/config/scenes/test/scene.json"
+		},
+		"Test2" : {
+      "type" : "base",
+      "config" : "resources/config/scenes/test2/scene.json"
+		},
+		"Resume" : {
+      "type" : "resume",
+      "config" : "resources/config/scenes/resume/scene.json"
+		},
+		"Ending" : {
+      "type" : "ending",
+      "config" : "resources/config/scenes/ending/scene.json"
+		},
+		"Boss" : {
+      "type" : "boss",
+      "config" : "resources/config/scenes/boss/scene.json"
+		},
+		"Witch" : {
+      "type" : "witch",
+      "config" : "resources/config/scenes/witch/scene.json"
+		},
+		"SwampMushroom" : {
+      "type" : "swampMushroom",
+      "config" : "resources/config/scenes/swamp-mushrooms/scene.json"
+		},
+		"BirdPowerline" : {
+      "type" : "birdPowerline",
+      "config" : "resources/config/scenes/bird-powerline/scene.json"
+		},
+		"BirdPosts" : {
+      "type" : "birdPosts",
+      "config" : "resources/config/scenes/bird-posts/scene.json"
+		},
+		"SimpleLine" : {
+      "type" : "simpleLine",
+      "config" : "resources/config/scenes/simple-line/scene.json"
+		},
+		"ProtectStart" : {
+      "type" : "protectStart",
+      "config" : "resources/config/scenes/protect-start/scene.json"
+		},
+		"Protect1" : {
+      "type" : "protect1",
+      "config" : "resources/config/scenes/protect1/scene.json"
+		},
+		"Grass" : {
+      "type" : "leftRight",
+      "config" : "resources/config/scenes/grass/scene.json"
+		},
+		"Squirrel" : {
+      "type" : "squirrel",
+      "config" : "resources/config/scenes/squirrel/scene.json"
+		},
+		"AcornTree" : {
+      "type" : "acornTree",
+      "config" : "resources/config/scenes/acorn-tree/scene.json"
+		},
+		"Camper" : {
+      "type" : "camper",
+      "config" : "resources/config/scenes/camper/scene.json"
+		},
+		"Swing" : {
+      "type" : "swing",
+      "config" : "resources/config/scenes/swing/scene.json"
+		},
+		"Chase" : {
+      "type" : "chase",
+      "config" : "resources/config/scenes/chase/scene.json"
+		},
+		"Spirit" : {
+      "type" : "spirit",
+      "config" : "resources/config/scenes/spirit/scene.json"
+		},
+		"Jumpy" : {
+      "type" : "jumpy",
+      "config" : "resources/config/scenes/jumpy-guy/scene.json"
+		},
+		"Training" : {
+      "type" : "training",
+      "config" : "resources/config/scenes/training/scene.json"
+		},
+		"Cave" : {
+      "type" : "cave",
+      "config" : "resources/config/scenes/cave/scene.json"
+		},
+		"Cave2" : {
+      "type" : "cave2",
+      "config" : "resources/config/scenes/cave-second/scene.json"
+		},
+		"Cave3" : {
+      "type" : "cave3",
+      "config" : "resources/config/scenes/cave-third/scene.json"
+		},
+		"CaveFront" : {
+      "type" : "caveFront",
+      "config" : "resources/config/scenes/cave-front/scene.json"
+		},
+		"Hostage" : {
+      "type" : "hostage",
+      "config" : "resources/config/scenes/hostage/scene.json"
+		},
+		"SingleHostage" : {
+      "type" : "singleHostage",
+      "config" : "resources/config/scenes/single-hostage/scene.json"
+		},
+		"Hanger" : {
+      "type" : "hanger",
+      "config" : "resources/config/scenes/first-hanger/scene.json"
+		},
+		"HangerDrag" : {
+      "type" : "hangerDrag",
+      "config" : "resources/config/scenes/hanger-drag/scene.json"
+		},
+		"Stream" : {
+      "type" : "stream",
+      "config" : "resources/config/scenes/stream/scene.json"
+		},
+		"Start" : {
+      "type" : "start",
+      "config" : "resources/config/scenes/start/scene.json"
+		}
+  },
+  "connections" : [
+		{
+      "from" : {
+        "scene" : "ProtectStart",
+        "exit" : "start"
+      },
+      "to" : {
+        "scene" : "Spirit",
+        "exit" : "cave"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "SimpleLine",
+        "exit" : "start"
+      },
+      "to" : {
+        "scene" : "Spirit",
+        "exit" : "witch"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Jumpy",
+        "exit" : "start"
+      },
+      "to" : {
+        "scene" : "Spirit",
+        "exit" : "hostage"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Start",
+        "exit" : "start"
+      },
+      "to" : {
+        "scene" : "Spirit",
+        "exit" : "chase"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Start",
+        "exit" : "right"
+      },
+      "to" : {
+        "scene" : "Squirrel",
+        "exit" : "left"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Start",
+        "exit" : "left"
+      },
+      "to" : {
+        "scene" : "Swing",
+        "exit" : "right"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Squirrel",
+        "exit" : "right"
+      },
+      "to" : {
+        "scene" : "Camper",
+        "exit" : "left"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Camper",
+        "exit" : "right"
+      },
+      "to" : {
+        "scene" : "AcornTree",
+        "exit" : "left"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "AcornTree",
+        "exit" : "right"
+      },
+      "to" : {
+        "scene" : "Stream",
+        "exit" : "left"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Stream",
+        "exit" : "right"
+      },
+      "to" : {
+        "scene" : "Swing",
+        "exit" : "left"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Swing",
+        "exit" : "exit"
+      },
+      "to" : {
+        "scene" : "Chase",
+        "exit" : "start"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Swing",
+        "exit" : "right"
+      },
+      "to" : {
+        "scene" : "Start",
+        "exit" : "left"
+      }
+		},
+    {
+      "from" : {
+        "scene" : "Chase",
+        "exit" : "done"
+      },
+      "to" : {
+        "scene" : "Spirit",
+        "exit" : "first"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Training",
+        "exit" : "start"
+      },
+      "to" : {
+        "scene" : "Spirit",
+        "exit" : "training"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Training",
+        "exit" : "done"
+      },
+      "to" : {
+        "scene" : "Spirit",
+        "exit" : "from-training"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Ending",
+        "exit" : "start"
+      },
+      "to" : {
+        "scene" : "Spirit",
+        "exit" : "ending"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Jumpy",
+        "exit" : "right"
+      },
+      "to" : {
+        "scene" : "SingleHostage",
+        "exit" : "left"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "SingleHostage",
+        "exit" : "right"
+      },
+      "to" : {
+        "scene" : "Hostage",
+        "exit" : "left"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Hostage",
+        "exit" : "right"
+      },
+      "to" : {
+        "scene" : "Hanger",
+        "exit" : "left"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "HangerDrag",
+        "exit" : "left"
+      },
+      "to" : {
+        "scene" : "Hanger",
+        "exit" : "right"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "HangerDrag",
+        "exit" : "right"
+      },
+      "to" : {
+        "scene" : "Jumpy",
+        "exit" : "left"
+      }
+		},
+		{
+			"from" : {
+        "scene" : "CaveFront",
+        "exit" : "cave"
+      },
+      "to" : {
+        "scene" : "Cave",
+        "exit" : "start"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Cave",
+        "exit" : "start"
+      },
+      "to" : {
+        "scene" : "CaveFront",
+        "exit" : "outside-cave"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Cave",
+        "exit" : "exit"
+      },
+      "to" : {
+        "scene" : "CaveFront",
+        "exit" : "outside-cave"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Cave2",
+        "exit" : "exit"
+      },
+      "to" : {
+        "scene" : "CaveFront",
+        "exit" : "outside-cave"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Cave3",
+        "exit" : "exit"
+      },
+      "to" : {
+        "scene" : "CaveFront",
+        "exit" : "outside-cave"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Cave",
+        "exit" : "left"
+      },
+      "to" : {
+        "scene" : "Cave2",
+        "exit" : "right"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Cave3",
+        "exit" : "right"
+      },
+      "to" : {
+        "scene" : "Cave2",
+        "exit" : "left"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "ProtectStart",
+        "exit" : "left"
+      },
+      "to" : {
+        "scene" : "CaveFront",
+        "exit" : "right"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "ProtectStart",
+        "exit" : "right"
+      },
+      "to" : {
+        "scene" : "Protect1",
+        "exit" : "left"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "SwampMushroom",
+        "exit" : "right"
+      },
+      "to" : {
+        "scene" : "BirdPowerline",
+        "exit" : "left"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "SwampMushroom",
+        "exit" : "left"
+      },
+      "to" : {
+        "scene" : "Witch",
+        "exit" : "right"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "SwampMushroom",
+        "exit" : "shell"
+      },
+      "to" : {
+        "scene" : "Witch",
+        "exit" : "witch-appear"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "SimpleLine",
+        "exit" : "left"
+      },
+      "to" : {
+        "scene" : "BirdPosts",
+        "exit" : "right"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "BirdPosts",
+        "exit" : "left"
+      },
+      "to" : {
+        "scene" : "BirdPowerline",
+        "exit" : "right"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "SimpleLine",
+        "exit" : "right"
+      },
+      "to" : {
+        "scene" : "Boss",
+        "exit" : "left"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Resume",
+        "exit" : "start"
+      },
+      "to" : {
+        "scene" : "Resume",
+        "exit" : "start"
+      }
+		}
+  ]
+}

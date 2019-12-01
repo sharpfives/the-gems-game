@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="4" nextobjectid="11">
+ <tileset firstgid="1" name="tileset" tilewidth="180" tileheight="264" tilecount="2" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <properties>
+    <property name="key" value="grass2"/>
+   </properties>
+   <image width="30" height="42" source="../../../images/scenes/test2/grass2.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="key" value="tree2"/>
+   </properties>
+   <image width="180" height="264" source="../../../images/scenes/test2/tree2.png"/>
+  </tile>
+ </tileset>
+ <objectgroup id="2" name="objects">
+  <object id="3" gid="2" x="325" y="418" width="180" height="264"/>
+  <object id="4" gid="1" x="284" y="403" width="30" height="42"/>
+  <object id="5" gid="1" x="344" y="427" width="30" height="42"/>
+  <object id="6" gid="1" x="480" y="377" width="30" height="42"/>
+  <object id="7" gid="1" x="292" y="488" width="30" height="42"/>
+  <object id="8" gid="1" x="506" y="431" width="30" height="42"/>
+ </objectgroup>
+ <objectgroup id="3" name="areas">
+  <object id="1" name="left" type="LeftExitArea" x="-14" y="-27">
+   <polygon points="0,0 79,0 91,692 -5,692"/>
+  </object>
+  <object id="2" name="right" type="RightExitArea" x="775" y="-32">
+   <polygon points="0,0 79,0 91,692 -5,692"/>
+  </object>
+  <object id="9" name="start" x="150" y="375">
+   <point/>
+  </object>
+  <object id="10" name="left" x="89" y="335">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

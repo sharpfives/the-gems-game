@@ -1,0 +1,32 @@
+[
+	{ "text" : "a weapon!?" },
+	{ "text" : "hahaha" },
+	{ "text" : "come on, man."},
+	{ "text" : "alright fine. FINE."},
+	{ 
+		"text" : "take this bow and arrow.",
+		"key" : "bow"
+	},
+	{ "text" : "it should be suitable."},
+	{ "text" : "considering it was crafted by a GOD."},
+	{ "text" : "don’t shoot your eye out, rookie."},
+	{ 
+		"text" : "anything else?",
+		"responses" : [
+			{
+				"how do i use it?" : [
+					{ "text" : "ooooh i guess i'd better show you the ropes" },
+					{ "text" : "right this way..." },
+					{ "end" : "training" }
+				]
+			},
+			{
+				"what was thing that about the demons?" : [
+					{
+						"key" : "clarify"
+					}
+				]
+			}
+		]
+	}
+]

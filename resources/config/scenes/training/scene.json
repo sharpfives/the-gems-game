@@ -1,0 +1,11 @@
+{
+  "name" : "Training Scene",
+	"tilemap" : "resources/config/scenes/training/tilemap.json",
+	"imagesRootDir" : "resources/images/scenes/training",
+  "images" : {
+		"grass" : "../test/grass1.png",
+		"post" : "post.png",
+		"balloon" : "balloon.png"
+
+  }
+}

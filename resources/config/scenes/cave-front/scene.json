@@ -1,0 +1,12 @@
+{
+  "name" : "",
+	"tilemap" : "resources/config/scenes/cave-front/tilemap.json",
+	"imagesRootDir" : "resources/",
+  "images" : {
+		"tree5" : "tree5.png",
+		"grass1" : "grass1.png",
+		"grass2" : "grass2.png",
+		"rock" : "rock.png"
+
+  }
+}

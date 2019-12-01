@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="5" nextobjectid="12">
+ <tileset firstgid="1" name="tileset" tilewidth="180" tileheight="378" tilecount="4" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <properties>
+    <property name="key" value="pole1"/>
+    <property name="yOffset" type="int" value="0"/>
+   </properties>
+   <image width="180" height="378" source="../../../pole1.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="key" value="pole2"/>
+    <property name="yOffset" type="int" value="0"/>
+   </properties>
+   <image width="90" height="228" source="../../../pole2.png"/>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="key" value="grass1"/>
+   </properties>
+   <image width="54" height="60" source="../../../grass1.png"/>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="key" value="grass2"/>
+   </properties>
+   <image width="30" height="42" source="../../../grass2.png"/>
+  </tile>
+ </tileset>
+ <objectgroup id="3" name="objects">
+  <object id="1" gid="1" x="234" y="540" width="180" height="378"/>
+  <object id="7" gid="4" x="372" y="426" width="30" height="42"/>
+  <object id="8" gid="4" x="228" y="456" width="30" height="42"/>
+  <object id="9" gid="3" x="318" y="486" width="54" height="60"/>
+ </objectgroup>
+ <objectgroup id="4" name="points">
+  <object id="5" name="rope1" x="264" y="204">
+   <point/>
+  </object>
+  <object id="6" name="rope2" x="396" y="210">
+   <point/>
+  </object>
+  <object id="10" name="start" x="570" y="384">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

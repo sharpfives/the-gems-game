@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="5" nextobjectid="14">
+ <tileset firstgid="1" name="objects" tilewidth="54" tileheight="54" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <properties>
+   <property name="key" value="tree"/>
+  </properties>
+  <tile id="1">
+   <properties>
+    <property name="key" value="grass"/>
+   </properties>
+   <image width="54" height="54" source="../../../images/scenes/test/grass1.png"/>
+  </tile>
+ </tileset>
+ <objectgroup id="2" name="exits">
+  <object id="1" name="start" x="648" y="378">
+   <point/>
+  </object>
+  <object id="5" name="jumpy" x="486" y="438">
+   <point/>
+  </object>
+  <object id="6" name="fire" x="300" y="336">
+   <point/>
+  </object>
+  <object id="7" name="a" x="144" y="378">
+   <point/>
+  </object>
+  <object id="8" name="b" x="240" y="318">
+   <point/>
+  </object>
+  <object id="9" name="c" x="354" y="318">
+   <point/>
+  </object>
+  <object id="10" name="d" x="456" y="366">
+   <point/>
+  </object>
+  <object id="11" name="e" x="216" y="468">
+   <point/>
+  </object>
+  <object id="12" name="f" x="378" y="468">
+   <point/>
+  </object>
+  <object id="13" name="left" x="54" y="426">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="objects"/>
+ <objectgroup id="4" name="grass"/>
+</map>

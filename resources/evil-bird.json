@@ -1,0 +1,104 @@
+{ "frames": {
+   "evil-bird 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 90, "h": 90 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 90, "h": 90 },
+    "sourceSize": { "w": 90, "h": 90 },
+    "duration": 100
+   },
+   "evil-bird 1.aseprite": {
+    "frame": { "x": 90, "y": 0, "w": 90, "h": 90 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 90, "h": 90 },
+    "sourceSize": { "w": 90, "h": 90 },
+    "duration": 66
+   },
+   "evil-bird 2.aseprite": {
+    "frame": { "x": 180, "y": 0, "w": 90, "h": 90 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 90, "h": 90 },
+    "sourceSize": { "w": 90, "h": 90 },
+    "duration": 66
+   },
+   "evil-bird 3.aseprite": {
+    "frame": { "x": 270, "y": 0, "w": 90, "h": 90 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 90, "h": 90 },
+    "sourceSize": { "w": 90, "h": 90 },
+    "duration": 66
+   },
+   "evil-bird 4.aseprite": {
+    "frame": { "x": 360, "y": 0, "w": 90, "h": 90 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 90, "h": 90 },
+    "sourceSize": { "w": 90, "h": 90 },
+    "duration": 66
+   },
+   "evil-bird 5.aseprite": {
+    "frame": { "x": 450, "y": 0, "w": 90, "h": 90 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 90, "h": 90 },
+    "sourceSize": { "w": 90, "h": 90 },
+    "duration": 66
+   },
+   "evil-bird 6.aseprite": {
+    "frame": { "x": 540, "y": 0, "w": 90, "h": 90 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 90, "h": 90 },
+    "sourceSize": { "w": 90, "h": 90 },
+    "duration": 66
+   },
+   "evil-bird 7.aseprite": {
+    "frame": { "x": 630, "y": 0, "w": 90, "h": 90 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 90, "h": 90 },
+    "sourceSize": { "w": 90, "h": 90 },
+    "duration": 66
+   },
+   "evil-bird 8.aseprite": {
+    "frame": { "x": 720, "y": 0, "w": 90, "h": 90 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 90, "h": 90 },
+    "sourceSize": { "w": 90, "h": 90 },
+    "duration": 66
+   },
+   "evil-bird 9.aseprite": {
+    "frame": { "x": 810, "y": 0, "w": 90, "h": 90 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 90, "h": 90 },
+    "sourceSize": { "w": 90, "h": 90 },
+    "duration": 66
+   },
+   "evil-bird 10.aseprite": {
+    "frame": { "x": 900, "y": 0, "w": 90, "h": 90 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 90, "h": 90 },
+    "sourceSize": { "w": 90, "h": 90 },
+    "duration": 66
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.15",
+  "image": "evil-bird.png",
+  "format": "RGBA8888",
+  "size": { "w": 990, "h": 90 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "rest", "from": 0, "to": 0, "direction": "forward" },
+   { "name": "fly-in", "from": 1, "to": 5, "direction": "forward" },
+   { "name": "fly-away", "from": 6, "to": 10, "direction": "forward" }
+  ]
+ }
+}

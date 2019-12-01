@@ -1,0 +1,216 @@
+{ "frames": {
+   "deer 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 100
+   },
+   "deer 1.aseprite": {
+    "frame": { "x": 180, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 100
+   },
+   "deer 2.aseprite": {
+    "frame": { "x": 360, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 100
+   },
+   "deer 3.aseprite": {
+    "frame": { "x": 540, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 100
+   },
+   "deer 4.aseprite": {
+    "frame": { "x": 720, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 1000
+   },
+   "deer 5.aseprite": {
+    "frame": { "x": 900, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "deer 6.aseprite": {
+    "frame": { "x": 1080, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "deer 7.aseprite": {
+    "frame": { "x": 1260, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "deer 8.aseprite": {
+    "frame": { "x": 1440, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "deer 9.aseprite": {
+    "frame": { "x": 1620, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "deer 10.aseprite": {
+    "frame": { "x": 1800, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "deer 11.aseprite": {
+    "frame": { "x": 1980, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "deer 12.aseprite": {
+    "frame": { "x": 2160, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "deer 13.aseprite": {
+    "frame": { "x": 2340, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "deer 14.aseprite": {
+    "frame": { "x": 2520, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "deer 15.aseprite": {
+    "frame": { "x": 2700, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "deer 16.aseprite": {
+    "frame": { "x": 2880, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "deer 17.aseprite": {
+    "frame": { "x": 3060, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "deer 18.aseprite": {
+    "frame": { "x": 3240, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "deer 19.aseprite": {
+    "frame": { "x": 3420, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "deer 20.aseprite": {
+    "frame": { "x": 3600, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "deer 21.aseprite": {
+    "frame": { "x": 3780, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "deer 22.aseprite": {
+    "frame": { "x": 3960, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "deer 23.aseprite": {
+    "frame": { "x": 4140, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   },
+   "deer 24.aseprite": {
+    "frame": { "x": 4320, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 66
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.15",
+  "image": "deer.png",
+  "format": "RGBA8888",
+  "size": { "w": 4500, "h": 180 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "sing", "from": 0, "to": 3, "direction": "forward" },
+   { "name": "drink", "from": 4, "to": 15, "direction": "forward" },
+   { "name": "run", "from": 16, "to": 24, "direction": "forward" }
+  ]
+ }
+}

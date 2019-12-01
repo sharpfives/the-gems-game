@@ -1,0 +1,11 @@
+{
+  "name" : "",
+	"tilemap" : "resources/config/scenes/bird-powerline/tilemap.json",
+	"imagesRootDir" : "resources/",
+  "images" : {
+		"pole1" : "pole1.png",
+		"pole2" : "pole2.png",
+		"grass1" : "grass1.png",
+		"grass2" : "grass2.png"
+  }
+}

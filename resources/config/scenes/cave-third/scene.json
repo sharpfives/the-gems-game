@@ -1,0 +1,8 @@
+{
+  "name" : "Cave Scene 3",
+	"tilemap" : "resources/config/scenes/cave-third/tilemap.json",
+	"imagesRootDir" : "resources/",
+  "images" : {
+		"background3" : "images/scenes/cave/cave-scene3.png"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name" : "",
+	"tilemap" : "resources/config/scenes/witch/tilemap.json",
+	"imagesRootDir" : "resources/",
+  "images" : {
+		"scene-witch" : "scene-witch.png"
+  }
+}

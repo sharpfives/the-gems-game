@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="3" nextobjectid="2">
+ <tileset firstgid="1" name="tileset" tilewidth="1" tileheight="1" tilecount="0" columns="0"/>
+ <objectgroup id="2" name="exits">
+  <object id="1" name="start" x="222" y="295">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

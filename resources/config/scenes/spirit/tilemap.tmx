@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="6" nextobjectid="17">
+ <tileset firstgid="1" name="objects" tilewidth="180" tileheight="180" tilecount="3" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="1" type="SpiritPool">
+   <properties>
+    <property name="key" value="pool"/>
+   </properties>
+   <image width="180" height="180" source="../../../images/scenes/spirit/pool-single.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="13" y="45">
+     <polygon points="0,0 154,-2 154,117 -1,117"/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="key" value="grass1"/>
+   </properties>
+   <image width="54" height="54" source="../../../images/scenes/test/grass1.png"/>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="key" value="grass2"/>
+   </properties>
+   <image width="30" height="42" source="../../../grass2.png"/>
+  </tile>
+ </tileset>
+ <objectgroup id="2" name="exits">
+  <object id="1" name="first" x="414" y="522">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="door-spots">
+  <object id="10" name="hostage" x="144" y="246">
+   <point/>
+  </object>
+  <object id="11" name="witch" x="144" y="492">
+   <point/>
+  </object>
+  <object id="12" name="cave" x="672" y="492">
+   <point/>
+  </object>
+  <object id="13" name="chase" x="672" y="246">
+   <point/>
+  </object>
+  <object id="15" name="from-training" x="234" y="354">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="objects">
+  <object id="6" gid="2" x="330" y="408" width="180" height="180"/>
+ </objectgroup>
+ <objectgroup id="4" name="grass">
+  <object id="7" gid="3" x="534" y="426" width="54" height="54"/>
+  <object id="8" gid="3" x="306" y="444" width="54" height="54"/>
+  <object id="16" gid="4" x="276" y="252" width="30" height="42"/>
+ </objectgroup>
+</map>

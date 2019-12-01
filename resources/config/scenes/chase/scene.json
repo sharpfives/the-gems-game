@@ -1,0 +1,8 @@
+{
+  "name" : "Chase Scene",
+	"tilemap" : "resources/config/scenes/chase/tilemap.json",
+	"imagesRootDir" : "resources/images/scenes/chase",
+  "images" : {
+		"grass" : "../test/grass1.png"
+  }
+}

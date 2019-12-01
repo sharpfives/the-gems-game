@@ -1,0 +1,91 @@
+{ "frames": {
+   "hostage-campfire 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 20, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 20 },
+    "sourceSize": { "w": 20, "h": 20 },
+    "duration": 100
+   },
+   "hostage-campfire 1.aseprite": {
+    "frame": { "x": 20, "y": 0, "w": 20, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 20 },
+    "sourceSize": { "w": 20, "h": 20 },
+    "duration": 100
+   },
+   "hostage-campfire 2.aseprite": {
+    "frame": { "x": 40, "y": 0, "w": 20, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 20 },
+    "sourceSize": { "w": 20, "h": 20 },
+    "duration": 100
+   },
+   "hostage-campfire 3.aseprite": {
+    "frame": { "x": 60, "y": 0, "w": 20, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 20 },
+    "sourceSize": { "w": 20, "h": 20 },
+    "duration": 100
+   },
+   "hostage-campfire 4.aseprite": {
+    "frame": { "x": 80, "y": 0, "w": 20, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 20 },
+    "sourceSize": { "w": 20, "h": 20 },
+    "duration": 100
+   },
+   "hostage-campfire 5.aseprite": {
+    "frame": { "x": 100, "y": 0, "w": 20, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 20 },
+    "sourceSize": { "w": 20, "h": 20 },
+    "duration": 100
+   },
+   "hostage-campfire 6.aseprite": {
+    "frame": { "x": 120, "y": 0, "w": 20, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 20 },
+    "sourceSize": { "w": 20, "h": 20 },
+    "duration": 100
+   },
+   "hostage-campfire 7.aseprite": {
+    "frame": { "x": 140, "y": 0, "w": 20, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 20 },
+    "sourceSize": { "w": 20, "h": 20 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.15",
+  "image": "hostage-campfire.png",
+  "format": "RGBA8888",
+  "size": { "w": 160, "h": 20 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "there-front", "from": 0, "to": 0, "direction": "forward" },
+   { "name": "missing-front", "from": 1, "to": 1, "direction": "forward" },
+   { "name": "there-back", "from": 2, "to": 2, "direction": "forward" },
+   { "name": "missing-back", "from": 3, "to": 3, "direction": "forward" },
+   { "name": "there-angle", "from": 4, "to": 4, "direction": "forward" },
+   { "name": "missing-angle", "from": 5, "to": 5, "direction": "forward" },
+   { "name": "there-angle-back", "from": 6, "to": 6, "direction": "forward" },
+   { "name": "missing-angle-back", "from": 7, "to": 7, "direction": "forward" }
+  ],
+  "layers": [
+   { "name": "shadow", "opacity": 26, "blendMode": "normal" },
+   { "name": "Layer 1", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

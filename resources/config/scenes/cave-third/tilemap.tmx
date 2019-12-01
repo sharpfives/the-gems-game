@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="6" nextobjectid="4">
+ <tileset firstgid="1" name="tileset" tilewidth="84" tileheight="324" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0" type="Torch">
+   <properties>
+    <property name="key" value="torch-flame"/>
+   </properties>
+   <image width="84" height="324" source="../../../torch-flame-single.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="192">
+     <polygon points="0,0 84,-1 84,131 2,128"/>
+    </object>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <imagelayer id="2" name="background3">
+  <image source="../../../images/scenes/cave/cave-scene3.png" width="840" height="630"/>
+ </imagelayer>
+ <objectgroup id="3" name="exits">
+  <object id="1" name="hang-point" x="255" y="60">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="areas">
+  <object id="3" name="nope" type="NoClickArea" x="0" y="348">
+   <polygon points="0,-348 312,-348 318,0 408,282 0,282"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="objects">
+  <object id="2" gid="1" x="468" y="396" width="84" height="324"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,36 @@
+[
+	{"text" : "hahahaha"},
+	{"text" : "wow!" },
+	{"text" : "that thing almost got you!" },
+	{"text" : "you should have seen the look on your face" },
+	{"text" : "haha" },
+	{"text" : "you were all like:" },
+	{"text" : "\"AHHHHHH!!!\"”" },
+	{"text" : "hilarious"},
+	{"text" : "i mean, priceless"},
+	{"text" : "seriously" },
+	{"text" : "i have never"},
+	{"text" : "in all my 628 years"},
+	{"text" : "seen anyone run that fast"},
+	{"text" : "wheww hahaha"},
+
+	{
+		"text" : "...",
+		"key" : "stop-laughing"
+	},
+	{"text" : "oh you’re not laughing"},
+	{"text" : "guess it was kinda serious"},
+	{"text" : "being chased by beasts and all"},
+	{"text" : "my bad"},
+	{"text" : "well hey"},
+	{"text" : "cheer up, buttercup"},
+	{"text" : "no time to be complaining about being a hero"},
+	{"text" : "there's work to be done"},
+	{
+		"text" : "see these doors?",
+		"key" : "doors"
+	},
+	{"text" : "people need your help"},
+	{"text" : "pick a door to get started"}
+
+]

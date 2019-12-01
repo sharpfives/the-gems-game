@@ -1,0 +1,12 @@
+{
+  "name" : "",
+	"tilemap" : "resources/config/scenes/swamp-mushrooms/tilemap.json",
+	"imagesRootDir" : "resources/",
+  "images" : {
+		"pond1" : "pond1.png",
+		"pond2" : "pond2.png",
+		"pond3" : "pond3.png",
+		"grass1" : "grass1.png",
+		"grass2" : "grass2.png"
+  }
+}

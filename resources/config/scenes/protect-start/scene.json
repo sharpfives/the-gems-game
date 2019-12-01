@@ -1,0 +1,15 @@
+{
+  "name" : "",
+	"tilemap" : "resources/config/scenes/protect-start/tilemap.json",
+	"imagesRootDir" : "resources/",
+  "images" : {
+		"grass1" : "grass1.png",
+		"grass2" : "grass2.png",
+		"pillar1" : "pillar1.png",
+		"pillar2" : "pillar2.png",
+		"pillar3" : "pillar3.png",
+		"pillar4" : "pillar4.png",
+		"pillar-double1" : "pillar-double1.png",
+		"pillar-double2" : "pillar-double2.png"
+  }
+}

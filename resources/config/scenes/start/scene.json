@@ -1,0 +1,12 @@
+{
+  "name" : "Start Scene",
+	"tilemap" : "resources/config/scenes/start/tilemap.json",
+	"imagesRootDir" : "resources/",
+  "images" : {
+		"tree2" : "tree2.png",
+		"grass1" : "grass1.png",
+		"grass2" : "grass2.png",
+		"clouds" : "clouds.png"
+
+  }
+}

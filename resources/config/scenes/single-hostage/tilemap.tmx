@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="4" nextobjectid="8">
+ <tileset firstgid="1" name="tileset" tilewidth="54" tileheight="54" tilecount="2" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <properties>
+    <property name="key" value="grass1"/>
+   </properties>
+   <image width="54" height="54" source="../../../images/scenes/test/grass1.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="key" value="grass2"/>
+   </properties>
+   <image width="30" height="42" source="../../../images/scenes/test2/grass2.png"/>
+  </tile>
+ </tileset>
+ <objectgroup id="2" name="object">
+  <object id="1" gid="1" x="282" y="369" width="54" height="54"/>
+  <object id="2" gid="1" x="415" y="446" width="54" height="54"/>
+  <object id="3" gid="1" x="542" y="357" width="54" height="54"/>
+  <object id="4" gid="2" x="213" y="445" width="30" height="42"/>
+  <object id="5" gid="2" x="359" y="518" width="30" height="42"/>
+  <object id="6" gid="2" x="622" y="440" width="30" height="42"/>
+ </objectgroup>
+ <objectgroup id="3" name="exits">
+  <object id="7" name="hostage" x="378" y="384">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

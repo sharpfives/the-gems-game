@@ -1,0 +1,9 @@
+{
+  "name" : "Hostage Scene",
+	"tilemap" : "resources/config/scenes/hostage/tilemap.json",
+	"imagesRootDir" : "resources/images/scenes/hostage",
+  "images" : {
+		"grass1" : "../test/grass1.png",
+		"grass2" : "../test2/grass2.png"
+  }
+}

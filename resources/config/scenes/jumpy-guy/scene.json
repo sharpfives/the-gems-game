@@ -1,0 +1,9 @@
+{
+  "name" : "Jumpy Scene",
+	"tilemap" : "resources/config/scenes/jumpy-guy/tilemap.json",
+	"imagesRootDir" : "resources/images/scenes/jumpy-guy",
+  "images" : {
+		"grass" : "../test/grass1.png",
+		"tree" : "../test/test-tree.png"
+  }
+}

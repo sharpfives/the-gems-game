@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="5" nextobjectid="11">
+ <tileset firstgid="1" name="objects" tilewidth="312" tileheight="408" tilecount="2" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <properties>
+    <property name="key" value="tree-swing"/>
+    <property name="yOffset" type="int" value="385"/>
+   </properties>
+   <image width="312" height="408" source="../../../images/scenes/swing/tree-swing.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="key" value="grass"/>
+   </properties>
+   <image width="54" height="54" source="../../../images/scenes/test/grass1.png"/>
+  </tile>
+ </tileset>
+ <objectgroup id="2" name="objects">
+  <object id="7" gid="1" x="185" y="470" width="312" height="408"/>
+ </objectgroup>
+ <objectgroup id="3" name="grass">
+  <object id="2" gid="2" x="193" y="439" width="54" height="54"/>
+  <object id="3" gid="2" x="226" y="494" width="54" height="54"/>
+  <object id="4" gid="2" x="435" y="500" width="54" height="54"/>
+  <object id="5" gid="2" x="126" y="490" width="54" height="54"/>
+ </objectgroup>
+ <objectgroup id="4" name="exits">
+  <object id="6" name="start" x="121" y="428">
+   <point/>
+  </object>
+  <object id="8" name="swing" x="376" y="236">
+   <point/>
+  </object>
+  <object id="9" name="swing" type="PolygonArea" x="355" y="233">
+   <polygon points="0,0 119,-4 124,196 0,193"/>
+  </object>
+  <object id="10" name="door" x="648" y="396">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

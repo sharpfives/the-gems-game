@@ -1,0 +1,11 @@
+{
+  "name" : "Test Scene",
+	"tilemap" : "resources/config/scenes/test/tilemap.json",
+	"imagesRootDir" : "resources/images/scenes/test",
+  "images" : {
+		"background" : "background.png",
+		"grass" : "grass1.png",
+		"test-tree" : "test-tree.png",
+		"acorn" : "acorn-small.png"
+  }
+}

@@ -1,0 +1,38 @@
+{ "frames": {
+   "pool 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 100
+   },
+   "pool 1.aseprite": {
+    "frame": { "x": 180, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 100
+   },
+   "pool 2.aseprite": {
+    "frame": { "x": 360, "y": 0, "w": 180, "h": 180 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 180 },
+    "sourceSize": { "w": 180, "h": 180 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.15",
+  "image": "pool.png",
+  "format": "RGBA8888",
+  "size": { "w": 540, "h": 180 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "rest", "from": 0, "to": 1, "direction": "forward" }
+  ]
+ }
+}

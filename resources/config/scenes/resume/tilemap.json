@@ -1,0 +1,15 @@
+{ "height":105,
+ "infinite":false,
+ "layers":[],
+ "nextlayerid":5,
+ "nextobjectid":9,
+ "orientation":"orthogonal",
+ "renderorder":"right-down",
+ "tiledversion":"1.1.6",
+ "tileheight":6,
+ "tilesets":[],
+ "tilewidth":6,
+ "type":"map",
+ "version":1.2,
+ "width":140
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "Test Scene 2",
+	"tilemap" : "resources/config/scenes/test2/tilemap.json",
+	"imagesRootDir" : "resources/images/scenes/test2",
+  "images" : {
+		"grass2" : "grass2.png",
+		"tree2" : "tree2.png"
+  }
+}

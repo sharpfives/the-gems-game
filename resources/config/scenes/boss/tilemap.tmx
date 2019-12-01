@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="4" nextobjectid="5">
+ <tileset firstgid="1" name="tileset" tilewidth="54" tileheight="60" tilecount="2" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <properties>
+    <property name="key" value="grass1"/>
+   </properties>
+   <image width="54" height="60" source="../../../grass1.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="key" value="grass2"/>
+   </properties>
+   <image width="30" height="42" source="../../../grass2.png"/>
+  </tile>
+ </tileset>
+ <objectgroup id="2" name="grass">
+  <object id="1" gid="1" x="282" y="372" width="54" height="60"/>
+  <object id="2" gid="2" x="372" y="288" width="30" height="42"/>
+  <object id="3" gid="2" x="486" y="336" width="30" height="42"/>
+ </objectgroup>
+ <objectgroup id="3" name="points">
+  <object id="4" name="boss" x="744" y="318">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

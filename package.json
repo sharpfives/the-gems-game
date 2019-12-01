@@ -1,0 +1,30 @@
+{
+  "name": "minimal",
+  "version": "1.0.0",
+  "description": "a game made for #githubgameoff 2019.",
+  "scripts": {
+    "debug": "webpack --config webpack.dev.js",
+    "dev": "webpack --config webpack.dev.js && webpack-dev-server --open --config webpack.dev.js --mode development",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "author": "sharpfives",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.3",
+    "expose-loader": "0.7.5",
+    "html-webpack-plugin": "^3.2.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "3.4.5",
+    "webpack": "^4.35.3",
+    "webpack-cli": "3.3.2",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1",
+    "electron": "^5.0.2"
+  },
+  "dependencies": {
+    "eventemitter3": "^4.0.0",
+    "howler": "^2.1.2",
+    "phaser": "^3.19.0",
+    "phaser-matter-collision-plugin": "^0.10.2"
+  }
+}

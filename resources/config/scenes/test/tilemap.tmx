@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="9" nextobjectid="19">
+ <tileset firstgid="1" name="images" tilewidth="426" tileheight="378" tilecount="3" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="1">
+   <properties>
+    <property name="key" value="grass"/>
+   </properties>
+   <image width="54" height="54" source="../../../images/scenes/test/grass1.png"/>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="key" value="test-tree"/>
+   </properties>
+   <image width="426" height="378" source="../../../images/scenes/test/test-tree.png"/>
+   <objectgroup draworder="index">
+    <object id="2" x="146" y="351">
+     <polygon points="0,0 45,-36 50,-155 -3,-187 -93,-168 -108,-187 -64,-304 32,-314 109,-336 177,-252 171,-164 123,-183 96,-147 101,-47 160,7 19,8"/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="key" value="acorn"/>
+   </properties>
+   <image width="54" height="60" source="../../../images/scenes/test/acorn-small.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="4" y="11">
+     <polygon points="0,0 42,0 43,38 1,37"/>
+    </object>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <imagelayer id="2" name="background">
+  <image source="../../../images/scenes/test/background.png" width="840" height="630"/>
+ </imagelayer>
+ <objectgroup id="3" name="tree">
+  <object id="12" gid="3" x="192" y="480" width="426" height="378"/>
+ </objectgroup>
+ <objectgroup id="4" name="grass">
+  <object id="2" gid="2" x="492" y="606" width="54" height="54"/>
+  <object id="3" gid="2" x="432" y="516" width="54" height="54"/>
+  <object id="4" gid="2" x="342" y="600" width="54" height="54"/>
+  <object id="5" gid="2" x="282" y="516" width="54" height="54"/>
+  <object id="6" gid="2" x="306" y="426" width="54" height="54"/>
+  <object id="7" gid="2" x="474" y="432" width="54" height="54"/>
+  <object id="8" gid="2" x="168" y="480" width="54" height="54"/>
+  <object id="9" gid="2" x="168" y="582" width="54" height="54"/>
+  <object id="10" gid="2" x="612" y="492" width="54" height="54"/>
+  <object id="11" gid="2" x="528" y="534" width="54" height="54"/>
+ </objectgroup>
+ <objectgroup id="8" name="objects">
+  <object id="17" gid="4" x="223" y="513" width="54" height="60"/>
+ </objectgroup>
+ <objectgroup id="5" name="exits">
+  <object id="13" name="left" type="LeftExitArea" x="-16" y="18.7339">
+   <polygon points="0,0 5,595.266 86,595.266 77,-15.7339"/>
+  </object>
+  <object id="15" name="right" type="RightExitArea" x="789" y="20.5794">
+   <polygon points="0,0 5,589.421 86,589.421 77,-15.5794"/>
+  </object>
+  <object id="18" name="right" x="754" y="345">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="points">
+  <object id="16" name="start" x="568" y="443">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

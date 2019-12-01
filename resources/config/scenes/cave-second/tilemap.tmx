@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="6" nextobjectid="17">
+ <tileset firstgid="1" name="tileset" tilewidth="84" tileheight="324" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="1" type="Torch">
+   <properties>
+    <property name="key" value="torch"/>
+   </properties>
+   <image width="84" height="324" source="../../../torch-flame-single.png"/>
+   <objectgroup draworder="index">
+    <object id="1" type="Torch" x="16" y="194">
+     <polygon points="0,0 54,0 54,122 -3,121"/>
+    </object>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <imagelayer id="2" name="background" locked="1">
+  <image source="../../../images/scenes/cave/cave-scene2.png" width="840" height="630"/>
+ </imagelayer>
+ <objectgroup id="3" name="objects">
+  <object id="4" gid="2" x="362" y="390" width="84" height="324"/>
+ </objectgroup>
+ <objectgroup id="4" name="badguys">
+  <object id="7" name="b" type="bad-guy" x="288" y="389">
+   <point/>
+  </object>
+  <object id="12" name="a" type="bad-guy" x="386" y="558">
+   <point/>
+  </object>
+  <object id="13" name="c" type="bad-guy" x="588" y="469">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="exits">
+  <object id="15" name="right" x="756" y="450">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

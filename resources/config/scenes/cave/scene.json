@@ -1,0 +1,10 @@
+{
+  "name" : "Cave Scene",
+	"tilemap" : "resources/config/scenes/cave/tilemap.json",
+	"imagesRootDir" : "resources/images/scenes/cave",
+  "images" : {
+		"background-cave1" : "cave-scene.png",
+		"cave-entrance" : "cave-entrance.png"
+
+  }
+}

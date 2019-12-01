@@ -1,0 +1,25 @@
+{ "height":105,
+ "infinite":false,
+ "layers":[],
+ "nextlayerid":2,
+ "nextobjectid":1,
+ "orientation":"orthogonal",
+ "renderorder":"right-down",
+ "tiledversion":"1.1.6",
+ "tileheight":6,
+ "tilesets":[
+        {
+         "columns":0,
+         "firstgid":1,
+         "margin":0,
+         "name":"tileset",
+         "spacing":0,
+         "tilecount":0,
+         "tileheight":1,
+         "tilewidth":1
+        }],
+ "tilewidth":6,
+ "type":"map",
+ "version":1.2,
+ "width":140
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="4" nextobjectid="7">
+ <tileset firstgid="1" name="tileset" tilewidth="150" tileheight="150" tilecount="3" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <properties>
+    <property name="key" value="grass1"/>
+   </properties>
+   <image width="54" height="60" source="../../../grass1.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="key" value="grass2"/>
+   </properties>
+   <image width="30" height="42" source="../../../grass2.png"/>
+  </tile>
+  <tile id="2" type="Camper">
+   <properties>
+    <property name="key" value=""/>
+   </properties>
+   <image width="150" height="150" source="../../../camper-single.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="6" y="124">
+     <polygon points="0,0 -2,-106 132,-102 129,6"/>
+    </object>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <objectgroup id="2" name="objects">
+  <object id="2" gid="1" x="510" y="432" width="54" height="54"/>
+  <object id="3" gid="2" x="324" y="354" width="30" height="42"/>
+ </objectgroup>
+ <objectgroup id="3" name="exits">
+  <object id="4" name="camper" x="493" y="332">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

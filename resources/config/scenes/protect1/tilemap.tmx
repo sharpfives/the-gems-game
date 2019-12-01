@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="4" nextobjectid="12">
+ <tileset firstgid="1" name="tileset" tilewidth="204" tileheight="240" tilecount="8" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <properties>
+    <property name="key" value="grass1"/>
+   </properties>
+   <image width="54" height="60" source="../../../grass1.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="key" value="grass2"/>
+   </properties>
+   <image width="30" height="42" source="../../../grass2.png"/>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="key" value="pillar1"/>
+   </properties>
+   <image width="54" height="162" source="../../../pillar1.png"/>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="key" value="pillar2"/>
+   </properties>
+   <image width="54" height="96" source="../../../pillar2.png"/>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="key" value="pillar3"/>
+   </properties>
+   <image width="60" height="240" source="../../../pillar3.png"/>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="key" value="pillar4"/>
+   </properties>
+   <image width="42" height="180" source="../../../pillar4.png"/>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="key" value="pedestal"/>
+   </properties>
+   <image width="204" height="180" source="../../../pedestal.png"/>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="key" value="rocks"/>
+   </properties>
+   <image width="150" height="150" source="../../../rocks.png"/>
+  </tile>
+ </tileset>
+ <objectgroup id="2" name="grass"/>
+ <objectgroup id="3" name="objects">
+  <object id="2" gid="3" x="564" y="300" width="54" height="162"/>
+  <object id="3" gid="3" x="168" y="558" width="54" height="162"/>
+  <object id="5" gid="2" x="468" y="318" width="30" height="42"/>
+  <object id="6" gid="2" x="306" y="438" width="30" height="42"/>
+  <object id="7" gid="1" x="210" y="330" width="54" height="60"/>
+  <object id="8" gid="5" x="630" y="600" width="60" height="240"/>
+  <object id="9" gid="6" x="588" y="558" width="42" height="180"/>
+  <object id="11" gid="4" x="180" y="222" width="54" height="96"/>
+ </objectgroup>
+</map>

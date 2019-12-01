@@ -1,0 +1,103 @@
+{ "frames": {
+   "torch-flame 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 84, "h": 324 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 84, "h": 324 },
+    "sourceSize": { "w": 84, "h": 324 },
+    "duration": 66
+   },
+   "torch-flame 1.aseprite": {
+    "frame": { "x": 84, "y": 0, "w": 84, "h": 324 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 84, "h": 324 },
+    "sourceSize": { "w": 84, "h": 324 },
+    "duration": 66
+   },
+   "torch-flame 2.aseprite": {
+    "frame": { "x": 168, "y": 0, "w": 84, "h": 324 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 84, "h": 324 },
+    "sourceSize": { "w": 84, "h": 324 },
+    "duration": 66
+   },
+   "torch-flame 3.aseprite": {
+    "frame": { "x": 252, "y": 0, "w": 84, "h": 324 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 84, "h": 324 },
+    "sourceSize": { "w": 84, "h": 324 },
+    "duration": 66
+   },
+   "torch-flame 4.aseprite": {
+    "frame": { "x": 336, "y": 0, "w": 84, "h": 324 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 84, "h": 324 },
+    "sourceSize": { "w": 84, "h": 324 },
+    "duration": 66
+   },
+   "torch-flame 5.aseprite": {
+    "frame": { "x": 420, "y": 0, "w": 84, "h": 324 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 84, "h": 324 },
+    "sourceSize": { "w": 84, "h": 324 },
+    "duration": 66
+   },
+   "torch-flame 6.aseprite": {
+    "frame": { "x": 504, "y": 0, "w": 84, "h": 324 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 84, "h": 324 },
+    "sourceSize": { "w": 84, "h": 324 },
+    "duration": 66
+   },
+   "torch-flame 7.aseprite": {
+    "frame": { "x": 588, "y": 0, "w": 84, "h": 324 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 84, "h": 324 },
+    "sourceSize": { "w": 84, "h": 324 },
+    "duration": 66
+   },
+   "torch-flame 8.aseprite": {
+    "frame": { "x": 672, "y": 0, "w": 84, "h": 324 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 84, "h": 324 },
+    "sourceSize": { "w": 84, "h": 324 },
+    "duration": 66
+   },
+   "torch-flame 9.aseprite": {
+    "frame": { "x": 756, "y": 0, "w": 84, "h": 324 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 84, "h": 324 },
+    "sourceSize": { "w": 84, "h": 324 },
+    "duration": 66
+   },
+   "torch-flame 10.aseprite": {
+    "frame": { "x": 840, "y": 0, "w": 84, "h": 324 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 84, "h": 324 },
+    "sourceSize": { "w": 84, "h": 324 },
+    "duration": 66
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.15",
+  "image": "torch-flame.png",
+  "format": "RGBA8888",
+  "size": { "w": 924, "h": 324 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "rest", "from": 0, "to": 0, "direction": "forward" },
+   { "name": "play", "from": 1, "to": 10, "direction": "forward" }
+  ]
+ }
+}

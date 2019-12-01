@@ -1,0 +1,9 @@
+{
+  "name" : "Hanger Scene",
+	"tilemap" : "resources/config/scenes/first-hanger/tilemap.json",
+	"imagesRootDir" : "resources/images/scenes/first-hanger",
+  "images" : {
+		"grass" : "../test/grass1.png",
+		"tree" : "../test/test-tree.png"
+  }
+}

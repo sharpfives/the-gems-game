@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="4" nextobjectid="7">
+ <tileset firstgid="1" name="tileset" tilewidth="90" tileheight="240" tilecount="4" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <properties>
+    <property name="key" value="pole3"/>
+   </properties>
+   <image width="90" height="234" source="../../../pole3.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="key" value="pole4"/>
+   </properties>
+   <image width="90" height="240" source="../../../pole4.png"/>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="key" value="grass1"/>
+   </properties>
+   <image width="54" height="60" source="../../../grass1.png"/>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="key" value="grass2"/>
+   </properties>
+   <image width="30" height="42" source="../../../grass2.png"/>
+  </tile>
+ </tileset>
+ <objectgroup id="2" name="poles">
+  <object id="1" gid="1" x="240" y="450" width="90" height="234"/>
+  <object id="2" gid="2" x="456" y="486" width="90" height="240"/>
+  <object id="3" gid="4" x="348" y="444" width="30" height="42"/>
+ </objectgroup>
+ <objectgroup id="3" name="points">
+  <object id="4" name="0" type="bird" x="510" y="246">
+   <point/>
+  </object>
+  <object id="5" name="1" type="bird" x="276" y="222">
+   <point/>
+  </object>
+  <object id="6" name="2" type="mushroom" x="273.125" y="473.397">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

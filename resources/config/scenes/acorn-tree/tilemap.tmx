@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="5" nextobjectid="7">
+ <tileset firstgid="1" name="tileset" tilewidth="192" tileheight="312" tilecount="3" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <properties>
+    <property name="key" value="tree3"/>
+    <property name="yOffset" type="int" value="276"/>
+   </properties>
+   <image width="192" height="312" source="../../../tree3.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="key" value="grass1"/>
+   </properties>
+   <image width="54" height="60" source="../../../grass1.png"/>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="key" value="grass2"/>
+   </properties>
+   <image width="30" height="42" source="../../../grass2.png"/>
+  </tile>
+ </tileset>
+ <objectgroup id="2" name="tree">
+  <object id="1" gid="1" x="323" y="453" width="192" height="312"/>
+ </objectgroup>
+ <objectgroup id="3" name="grass">
+  <object id="2" gid="3" x="488" y="398" width="30" height="42"/>
+  <object id="3" gid="3" x="466" y="485" width="30" height="42"/>
+  <object id="4" gid="2" x="286" y="446" width="54" height="54"/>
+ </objectgroup>
+ <objectgroup id="4" name="spots">
+  <object id="5" name="acorn" x="441" y="210">
+   <point/>
+  </object>
+  <object id="6" name="0" type="acorn" x="360" y="414">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

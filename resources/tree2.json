@@ -1,0 +1,21 @@
+{ "frames": {
+   "tree2.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 180, "h": 264 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 180, "h": 264 },
+    "sourceSize": { "w": 180, "h": 264 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.15",
+  "image": "tree2.png",
+  "format": "RGBA8888",
+  "size": { "w": 180, "h": 264 },
+  "scale": "1",
+  "frameTags": [
+  ]
+ }
+}

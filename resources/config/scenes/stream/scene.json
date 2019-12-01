@@ -1,0 +1,8 @@
+{
+  "name" : "Stream Scene",
+	"tilemap" : "resources/config/scenes/stream/tilemap.json",
+	"imagesRootDir" : "resources/",
+  "images" : {
+		"tree4" : "tree4.png"
+  }
+}

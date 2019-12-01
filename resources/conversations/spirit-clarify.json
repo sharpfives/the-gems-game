@@ -1,0 +1,18 @@
+[
+	{ "text" : "seems you're not totally following." },
+	{ "text" : "need i remind you the situation here??" },
+	{ "text" : "the world is being taken over by demons" },
+	{ "text" : "yes" },
+	{ "text" : "demons" },
+	{ "text" : "raunchy demons" },
+	{ "text" : "you skedaddle on over to one of these here doors" },
+	{ "text" : "and you’re magically whisked away to somewhere else" },
+	{ "text" : "where?" },
+	{ "text" : "i dunno" },
+	{ "text" : "but you’ll find someone there who needs your help" },
+	{ "text" : "probably with the demons" },
+	{ "text" : "you can warp back here at any point by going back through the door" },
+	{ 
+		"key" : "done-clarify"
+	}
+]

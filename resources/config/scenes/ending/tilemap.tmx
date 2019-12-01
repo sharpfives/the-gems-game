@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="3" nextobjectid="3">
+ <objectgroup id="2" name="exits">
+  <object id="1" name="record-player" x="396" y="324">
+   <point/>
+  </object>
+  <object id="2" name="start" x="162" y="354">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

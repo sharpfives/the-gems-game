@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="5" nextobjectid="11">
+ <tileset firstgid="1" name="tileset" tilewidth="600" tileheight="438" tilecount="2" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="2">
+   <properties>
+    <property name="key" value="tree4"/>
+   </properties>
+   <image width="180" height="240" source="../../../tree4.png"/>
+  </tile>
+  <tile id="4" type="Stream">
+   <properties>
+    <property name="key" value="stream"/>
+   </properties>
+   <image width="600" height="438" source="../../../stream-single.png"/>
+  </tile>
+ </tileset>
+ <objectgroup id="2" name="objects">
+  <object id="10" gid="5" x="132" y="594" width="600" height="438"/>
+ </objectgroup>
+ <objectgroup id="3" name="areas">
+  <object id="3" name="area3" type="PolygonArea" x="511" y="486">
+   <polygon points="-13,0 29,-12 113,0 136,37 105,68 30,62 -13,24"/>
+  </object>
+  <object id="4" name="area2" type="PolygonArea" x="402" y="396">
+   <polygon points="0,12 36,-18 96,-12 150,-6 156,30 114,48 36,48"/>
+  </object>
+  <object id="5" name="area1" type="PolygonArea" x="330" y="318">
+   <polygon points="0,0 -35,9 -45,26 -12,48 78,54 111,24 50,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="points">
+  <object id="6" name="deer" x="636" y="444">
+   <point/>
+  </object>
+  <object id="7" name="badguy" x="594" y="282">
+   <point/>
+  </object>
+  <object id="8" name="sing" x="294" y="467">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

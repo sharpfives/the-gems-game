@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="5" nextobjectid="8">
+ <tileset firstgid="1" name="tileset" tilewidth="180" tileheight="378" tilecount="2" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <properties>
+    <property name="key" value="pole1"/>
+    <property name="yOffset" type="int" value="0"/>
+   </properties>
+   <image width="180" height="378" source="../../../pole1.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="key" value="pole2"/>
+    <property name="yOffset" type="int" value="0"/>
+   </properties>
+   <image width="90" height="228" source="../../../pole2.png"/>
+  </tile>
+ </tileset>
+ <objectgroup id="3" name="objects">
+  <object id="1" gid="1" x="468" y="540" width="180" height="378"/>
+  <object id="2" gid="2" x="216" y="438" width="90" height="228"/>
+ </objectgroup>
+ <objectgroup id="4" name="points">
+  <object id="3" name="rope1" x="228" y="240">
+   <point/>
+  </object>
+  <object id="4" name="rope2" x="282" y="234">
+   <point/>
+  </object>
+  <object id="5" name="rope3" x="498" y="204">
+   <point/>
+  </object>
+  <object id="6" name="rope4" x="630" y="210">
+   <point/>
+  </object>
+  <object id="7" name="0" type="acorn" x="360" y="450">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

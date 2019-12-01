@@ -1,0 +1,94 @@
+[
+	{
+		"text" : "welp"
+	},
+	{
+		"key" : "start",
+		"text" : "i guess we're having a conversation"
+	},
+  {
+    "text" : "Hello! How are you?",
+    "responses" : [
+      {
+        "Sorry, come again?" : 0
+      },
+      {
+        "Good, how are you?" : [
+          {
+            "text" : "OK, been better."
+          },
+          {
+            "text" : "How was your day?",
+            "responses" : [
+              {
+                "What's up?" : [
+                  {
+                    "text" : "Well since you asked..."
+                  },
+                  {
+                    "text" : "First, this thing happened."
+                  },
+                  {
+                    "text" : "THEN, this thing happened."
+                  },
+                  {
+                    "text" : "THEN, guess what... ANOTHER thing happened."
+                  },
+                  {
+										"text" : "Can you believe it?",
+										"key" : "middle",
+                    "responses" : [
+                      {
+                        "Yep" : [
+                          {
+                            "text" : "You just get me."
+													},
+													{
+														"end" : 0
+													}
+                        ]
+                      },
+                      {
+                        "Nope" : [
+                          {
+                            "text" : "I KNOW!!! Ok bye!"
+													},
+													{
+														"end" : 1
+													}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "Good" : [
+                  {
+                    "text" : "Well that's nice. Good talking with you"
+									},
+									{
+										"end" : 0
+									}
+                ]
+              },
+              {
+                "Eh, kinda sucked." : [
+                  {
+                    "text" : "Sorry to hear that. Welp... this is weird. Bye."
+									},
+									{
+										"end" : 0
+									}
+                ]
+              },
+              {
+                "Could you repeat that?" : 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

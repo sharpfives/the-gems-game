@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="8" nextobjectid="14">
+ <tileset firstgid="1" name="tileset" tilewidth="0" tileheight="0" tilecount="0" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+ </tileset>
+ <imagelayer id="7" name="scene-witch" locked="1">
+  <image source="../../../scene-witch.png" width="840" height="624"/>
+ </imagelayer>
+ <objectgroup id="5" name="points">
+  <object id="13" name="witch" x="414" y="450">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

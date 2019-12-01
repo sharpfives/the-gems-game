@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="140" height="105" tilewidth="6" tileheight="6" infinite="0" nextlayerid="6" nextobjectid="17">
+ <tileset firstgid="1" name="tileset" tilewidth="204" tileheight="174" tilecount="3" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="2">
+   <properties>
+    <property name="key" value="pond1"/>
+   </properties>
+   <image width="108" height="132" source="../../../pond1.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="1" y="79">
+     <polygon points="0,0 105,-1 86,51 11,44"/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="key" value="pond2"/>
+   </properties>
+   <image width="156" height="120" source="../../../pond2.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="4" y="66">
+     <polygon points="0,0 46,-36 141,18 59,46"/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="key" value="pond3"/>
+   </properties>
+   <image width="204" height="174" source="../../../pond3.png"/>
+   <objectgroup draworder="index">
+    <object id="1" x="12" y="97">
+     <polygon points="0,0 47,-41 107,-42 165,8 110,39 50,39"/>
+    </object>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <objectgroup id="3" name="objects">
+  <object id="7" gid="3" x="192" y="408" width="108" height="132"/>
+  <object id="8" gid="4" x="336" y="528" width="156" height="120"/>
+  <object id="9" gid="5" x="474" y="450" width="204" height="174"/>
+ </objectgroup>
+ <objectgroup id="5" name="points">
+  <object id="10" name="a" type="bird" x="294" y="396">
+   <point/>
+  </object>
+  <object id="11" name="c" type="bird" x="618" y="378">
+   <point/>
+  </object>
+  <object id="12" name="b" type="bird" x="378" y="528">
+   <point/>
+  </object>
+  <object id="16" name="shell" x="398.032" y="366.32">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

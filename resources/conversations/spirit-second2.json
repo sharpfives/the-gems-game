@@ -1,0 +1,21 @@
+[
+	{ 
+		"text" : "anything else?",
+		"responses" : [
+			{
+				"what's with the doors again?" : [
+					{
+						"key" : "doors"
+					}
+				]
+			},
+			{
+				"i could use some bow and arrow training" : [
+					{ "text" : "right this way..." },
+					{ "end" : "training" }
+				]
+			}
+		]
+	}
+
+]
