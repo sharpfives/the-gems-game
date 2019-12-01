@@ -65,7 +65,7 @@ export class TrainingScene extends SceneBase {
 						}
 					},
 					convo : [
-						{ text: "not bad, Jenny." },
+						{ text: "off to a good start." },
 						{ text: "now, let's try aiming."},
 						{ text: "after you pull back move your mouse to aim where you wanna shoot."},
 						{ 
@@ -90,7 +90,7 @@ export class TrainingScene extends SceneBase {
 		await this.spirit.appear();
 		this.startConversation(this.spirit, {
 			convo : [
-				{ text: "alright, Nancy." },
+				{ text: "alright, nancy." },
 				{ text: "here's what's gonna happen."},
 				{ text: "start by clicking down on yourself and then draging backwards."},
 				{ text: "just like you're pulling back on the bow."},
@@ -335,7 +335,7 @@ export class TrainingScene extends SceneBase {
 			target2.destroy();
 			await this.startConversation(this.spirit, {
 				convo : [
-					{ text : "hey, that's not bad."},
+					{ text : "well well"},
 					{ text : "maybe i under-estimated you."},
 					{ text : "but we're not done just yet."},
 					{ text : "try to hit the ropes without popping the balloons"}
