@@ -1,6 +1,6 @@
 import { SceneBase } from "../scene-base";
 import { Rope } from "../../objects/rope";
-import { sleep, tweenPromise, rand, OVERSAMPLE_FACTOR, TOP_DEPTH, LINE_COLOR, DEBUG_SCENE, STATE_DID_CHASE_SCENE, InputMode, AUDIO_CHASE_LOOP, AUDIO_CHASE_START, AUDIO_FOREST, AUDIO_SWING_END, setNumOfItem, ITEM_FEATHER, AUDIO_FOREST_BACKGROUND, AUDIO_SWING_CREAK } from "../../globals";
+import { sleep, tweenPromise, rand, OVERSAMPLE_FACTOR, TOP_DEPTH, LINE_COLOR, DEBUG_SCENE, STATE_DID_CHASE_SCENE, InputMode, AUDIO_CHASE_LOOP, AUDIO_CHASE_START, AUDIO_FOREST, AUDIO_SWING_END, setNumOfItem, ITEM_FEATHER, AUDIO_FOREST_BACKGROUND, AUDIO_SWING_CREAK, AUDIO_FOOTSTEPS } from "../../globals";
 import { PolygonArea } from "../../objects/areas/polygon-area";
 import { ExitArea } from "../../objects/areas/exit-area";
 import { BadGuy } from "../../objects/characters/bad-guy";
@@ -47,6 +47,7 @@ export class SwingScene extends LeftRightExitScene {
 
 		super.create(data);
 
+		this.isSittingOnSwing = false;
 		this.minYForWalk = 61 * OVERSAMPLE_FACTOR;
 		// this.removeRightExit();
 
@@ -72,11 +73,10 @@ export class SwingScene extends LeftRightExitScene {
 				await this.doSwing();
 				return;
 			}
-			this.isSittingOnSwing = true;
 			try {
-				me.playAnimation('walk');
-				await me.moveTo(base.x, base.y + 20);
-				await sleep(300);
+				await me.move(base.x, base.y + 20,double);
+				// this.setInputMode(InputMode.Disabled);
+				// await sleep(300);
 				this.sitOnSwing();
 				this.setSwingMode();
 			}
@@ -120,6 +120,9 @@ export class SwingScene extends LeftRightExitScene {
 	}
 
 	sitOnSwing() {
+		this.isSittingOnSwing = true;
+
+		audioManager.stop(AUDIO_FOOTSTEPS);
 		const me = this.me;
 		const obj = me.getGameObject();
 		me.faceRight();

@@ -22,7 +22,7 @@ export class BossScene extends LeftRightExitScene {
 		audioManager.preload(AUDIO_BOSS_START);
 
 		if (DEBUG_SCENE) {
-			stateManager.set(STATE_DID_BEAT_BOSS, false);
+			stateManager.set(STATE_DID_BEAT_BOSS, true);
 			setNumOfItem(ITEM_BOW,1);
 			setNumOfItem(ITEM_FEATHER,1);
 		}
@@ -32,6 +32,7 @@ export class BossScene extends LeftRightExitScene {
 
 		super.create(data);
 		this.removeRightExit();
+
 		const sceneWidth = (this.game.config.width as number);
 		const sceneHeight = (this.game.config.height as number);
 
@@ -46,12 +47,12 @@ export class BossScene extends LeftRightExitScene {
 			}
 		}
 		else {
-			(this.sceneLoader.areas['left'] as ExitArea).enabled = false;
+			this.removeLeftExit();
 			this.doBossEnter();
 			this.setInputMode(InputMode.Disabled);
 			audioManager.play(AUDIO_BOSS_START).then( () => {
 				audioManager.play(AUDIO_BOSS_LOOP);
-			})
+			});
 		}
 
 		// const exit = this.sceneLoader.exits['boss'];
@@ -101,9 +102,10 @@ export class BossScene extends LeftRightExitScene {
 		const exit = this.sceneLoader.exits[exitName];
 		const boss = new Boss(this,exit.x, exit.y);
 		boss.static(true);
-		boss.updateBody(55 * OVERSAMPLE_FACTOR,20 * OVERSAMPLE_FACTOR,false);
+		boss.updateBody(40 * OVERSAMPLE_FACTOR,20 * OVERSAMPLE_FACTOR,false);
 		const body = boss.getGameObject().body as any;
 		body.position.y -= 100;
+		body.position.x += 20;
 		boss.static(false);
 		boss.getGameObject().setVelocity(0);
 
@@ -142,6 +144,7 @@ export class BossScene extends LeftRightExitScene {
 				rp.getGameObject().setVelocityY(-9);
 			}
 			boss.destroy();
+			this.addLeftExit();
 			this.cameras.main.zoomTo(1, 1500, 'Sine.easeInOut', true);
 			this.cameras.main.pan(sceneWidth/2, sceneHeight/2,1500,undefined,true);
 		});

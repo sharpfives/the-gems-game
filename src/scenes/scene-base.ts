@@ -1,7 +1,7 @@
 'use strict';
 
 import * as Phaser from 'phaser';
-import { OVERSAMPLE_FACTOR, tweenPromise, sleep, TOP_DEPTH, AUDIO_BOW_PULL, AUDIO_ARROW, InputMode, STATE_LAST_EXIT, STATE_LAST_SCENE, setPickUpRedPiece, didPickUpMushroom, didPickUpAcorn, makeParticle, setPickUpMushroom, setPickUpAcorn, BG_COLOR, didPickUpRedPiece, STATE_CURRENT_SCENE, STATE_CURRENT_EXIT, AUDIO_DOOR_FADE_OUT, AUDIO_SMOKE_CLOUD, AUDIO_FOOTSTEPS } from '../globals';
+import { OVERSAMPLE_FACTOR, tweenPromise, sleep, TOP_DEPTH, AUDIO_BOW_PULL, AUDIO_ARROW, InputMode, STATE_LAST_EXIT, STATE_LAST_SCENE, setPickUpRedPiece, didPickUpMushroom, didPickUpAcorn, makeParticle, setPickUpMushroom, setPickUpAcorn, BG_COLOR, didPickUpRedPiece, STATE_CURRENT_SCENE, STATE_CURRENT_EXIT, AUDIO_DOOR_FADE_OUT, AUDIO_SMOKE_CLOUD, AUDIO_FOOTSTEPS, AUDIO_BADGUY_BREATH, AUDIO_BADGUY_STEP } from '../globals';
 import { rand } from '../globals';
 import { SpeechBubble } from '../objects/overlays/speech-bubble';
 import { Guy } from '../objects/characters/guy';
@@ -62,6 +62,7 @@ export class SceneBase extends Phaser.Scene {
 	public minYForWalk = 50 * OVERSAMPLE_FACTOR;
 	moveMarker: MoveMarker;
 	exitName: string;
+	isUsingShell: boolean;
 
 	constructor() {
 		super("");
@@ -112,6 +113,8 @@ export class SceneBase extends Phaser.Scene {
 
 	create(data) {
 
+		this.isUsingShell = false;
+
 		this.exitName = data.exitName;
 		
 		this.setCurrentScene();
@@ -143,7 +146,7 @@ export class SceneBase extends Phaser.Scene {
 		tmpContainer.setInteractive(new Phaser.Geom.Rectangle(0, 0, areaSize[0], areaSize[1]), Phaser.Geom.Rectangle.Contains);
 		tmpContainer.on('pointerover', () => {
 			const bowEnabled = me.hasBow();
-			if (!bowEnabled || this.inputMode !== InputMode.Walk) {
+			if (this.isUsingShell || !bowEnabled || this.inputMode !== InputMode.Walk) {
 				return;
 			}
 			this.hud.cursor.setHand();
@@ -156,7 +159,7 @@ export class SceneBase extends Phaser.Scene {
 			// console.log('STARTING');
 			const bowEnabled = me.hasBow();
 
-			if (!bowEnabled || this.inputMode !== InputMode.Walk) {
+			if (this.isUsingShell || !bowEnabled || this.inputMode !== InputMode.Walk) {
 				return;
 			}
 			this.hud.cursor.setHandClosed();
@@ -185,6 +188,7 @@ export class SceneBase extends Phaser.Scene {
 			this.setInputMode(InputMode.Bow);
 			this.hud.cursor.setHandClosed();
 			bow.setAlpha(1);
+			bow.depth(TOP_DEPTH);
 			bowSight.alpha(1);
 			bowSight.x(me.x());
 			bowSight.y(me.y()+0.5);
@@ -546,6 +550,9 @@ export class SceneBase extends Phaser.Scene {
 			r.destroy();
 		}
 
+		audioManager.stopAllWithPath(AUDIO_BADGUY_BREATH);
+		audioManager.stopAllWithPath(AUDIO_BADGUY_STEP);
+
 		audioManager.stop(AUDIO_FOOTSTEPS);
 
 		stateManager.set(STATE_LAST_EXIT, exitName);
@@ -607,7 +614,8 @@ export class SceneBase extends Phaser.Scene {
 			});
 		});
 
-		
+		speechBubble.destroy();
+
 		this.cameras.main.panEffect.reset();
 		this.cameras.main.zoomEffect.reset();
 
@@ -646,6 +654,7 @@ export class SceneBase extends Phaser.Scene {
 	}
 
 	async enterDoor(door: Door, exitName: string) {
+		this.setInputMode(InputMode.Disabled);
 		const me = this.me;
 		await door.open();
 		await me.walkTo(door.x(), door.y() - 10);

@@ -1,7 +1,7 @@
 'use strict';
 
 import { LeftRightExitScene } from '../left-right-exit-scene';
-import { tweenPromise, AUDIO_FOREST, DEBUG_SCENE, STATE_DID_GET_ACORNS_FROM_SQUIRREL, STATE_DID_CHASE_SCENE, OVERSAMPLE_FACTOR, setNumOfItem, ITEM_SHELL, ITEM_FEATHER, sleep, AUDIO_SQUIRREL } from '../../globals';
+import { tweenPromise, AUDIO_FOREST, DEBUG_SCENE, STATE_DID_GET_ACORNS_FROM_SQUIRREL, STATE_DID_CHASE_SCENE, OVERSAMPLE_FACTOR, setNumOfItem, ITEM_SHELL, ITEM_FEATHER, sleep, AUDIO_SQUIRREL, InputMode } from '../../globals';
 import { Squirrel } from '../../objects/characters/squirrel';
 import { audioManager } from '../../utils/audio-manager';
 import { Door } from '../../objects/items/door';
@@ -25,7 +25,7 @@ export class SquirrelScene extends LeftRightExitScene {
 		GroundAcorn.loadResources(this);
 
 		if (DEBUG_SCENE) {
-			// stateManager.set(STATE_DID_GET_ACORNS_FROM_SQUIRREL,true);
+			stateManager.set(STATE_DID_GET_ACORNS_FROM_SQUIRREL,false);
 			setNumOfItem(ITEM_SHELL,1);
 			setNumOfItem(ITEM_FEATHER,1);
 		}
@@ -58,6 +58,7 @@ export class SquirrelScene extends LeftRightExitScene {
 							squirrel.stopTimer();
 					}
 					else if (me.hasShell() && isSquirrelInOriginalPosition) {
+						this.setInputMode(InputMode.Disabled);
 						squirrel.playAnimation('freak-out');
 						audioManager.play(AUDIO_SQUIRREL);
 						await this.startConversation(squirrel, { convo : [
@@ -113,6 +114,7 @@ export class SquirrelScene extends LeftRightExitScene {
 						}
 					}
 					else if (!me.hasShell()) {
+						this.setInputMode(InputMode.Disabled);
 						squirrel.removeOverSetIcon();
 						squirrel.removeAllListeners('selected');
 						audioManager.play(AUDIO_SQUIRREL);

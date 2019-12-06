@@ -97,6 +97,7 @@ export class SpiritScene extends EnterFromDoorScene {
 		pool.on('selected', async () => {
 			try {
 				await me.walkTo(pool.x() - 20*OVERSAMPLE_FACTOR, pool.y());
+				this.setInputMode(InputMode.Disabled);
 				me.faceRight();
 				await tweenPromise(this, spirit.getGameObject(), {alpha : 1}, 750);
 				if (numRedPieces() >= TOTAL_RED_PIECES) {

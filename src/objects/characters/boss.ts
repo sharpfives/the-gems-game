@@ -13,7 +13,7 @@ export class Boss extends ItemWithHeight {
 
 	constructor(scene : Phaser.Scene, x : number, y : number) {
 		super(scene, x, y, Boss.name, 0, {x:0, y: 200});
-		this.updateBody(20,10,false);
+		this.updateBody(10,10,false);
 		this.sensor(true);
 		this.static(false);
 		this.ignoreGravity(true);
@@ -171,7 +171,7 @@ export class Boss extends ItemWithHeight {
 			const startY = me.y();
 			await tweenPromise(this.scene, this.getGameObject(), {y : this.y() - yDiff}, time);
 			await sleep(500);
-			for(let k = 0; k < 2; k++) {
+			for(let k = 0; k < 5; k++) {
 				this.cancelTweens();
 				await this.moveTo(me.x(), me.y() - yDiff - 200, 64 * OVERSAMPLE_FACTOR);
 			}

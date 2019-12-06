@@ -1,5 +1,6 @@
 node_modules/
 .DS_Store
 dist/
-minimal-darwin-x64/
 publish.sh
+the-gems-*-x64/
+the-gems*.zip

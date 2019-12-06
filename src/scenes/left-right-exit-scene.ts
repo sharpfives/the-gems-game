@@ -35,31 +35,8 @@ export class LeftRightExitScene extends SceneBase {
 
 		const areaWidth = gameWidth / 12;
 		const areaHeight = gameHeight;
-		const leftArea = new ExitArea(this,0,0,[
-			{ x : 0, y: 0 },
-			{ x : areaWidth, y: 0 },
-			{ x : areaWidth, y: areaHeight },
-			{ x : 0, y: areaHeight }
-		]);
-		leftArea.on('moved-over', () => {
-			if (leftArea.enabled)
-				this.hud.cursor.setLeftArrow();
-		});
-		leftArea.on('moved-out', () => {
-			if (leftArea.enabled)
-				this.hud.cursor.setNormal();
-		});
-		leftArea.on('selected', async (x,y,double) => {
-			if (!leftArea.enabled)
-				return;
-			console.log('selected left exit area');
-			try {
-				await me.move(x,y,double);
-				this.exitScene('left');
-			}
-			catch(e) {}
-		});
-		this.sceneLoader.areas['left'] = leftArea;
+
+		this.addLeftExit();
 
 		const rightArea = new ExitArea(this,gameWidth - areaWidth,0,[
 			{ x : 0, y: 0 },
@@ -94,6 +71,39 @@ export class LeftRightExitScene extends SceneBase {
 
 		this.setInitialPosition(data.exitName);
 
+	}
+
+	addLeftExit() {
+		const gameWidth = this.game.config.width as number;
+		const gameHeight = this.game.config.height as number;
+
+		const areaWidth = gameWidth / 12;
+		const areaHeight = gameHeight;
+		const leftArea = new ExitArea(this,0,0,[
+			{ x : 0, y: 0 },
+			{ x : areaWidth, y: 0 },
+			{ x : areaWidth, y: areaHeight },
+			{ x : 0, y: areaHeight }
+		]);
+		leftArea.on('moved-over', () => {
+			if (leftArea.enabled)
+				this.hud.cursor.setLeftArrow();
+		});
+		leftArea.on('moved-out', () => {
+			if (leftArea.enabled)
+				this.hud.cursor.setNormal();
+		});
+		leftArea.on('selected', async (x,y,double) => {
+			if (!leftArea.enabled)
+				return;
+			console.log('selected left exit area');
+			try {
+				await this.me.move(x,y,double);
+				this.exitScene('left');
+			}
+			catch(e) {}
+		});
+		this.sceneLoader.areas['left'] = leftArea;
 	}
 
 	removeLeftExit() {

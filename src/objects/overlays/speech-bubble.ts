@@ -42,12 +42,15 @@ export class SpeechBubble extends MoveableObject {
 	}
 
 	async hide() {
+		this.cancelTweens();
 		audioManager.play(AUDIO_SPEECHBUBBLE_CLOSE);
 		await tweenPromise(this.scene, this.container, {scaleX : 1.1, scaleY : 1.1}, 100);
 		await tweenPromise(this.scene, this.container, {x : this.container.width/2, scaleX : 0, scaleY : 0}, 100);
 	}
 
 	public async show(x: number, y: number, text: string, responses? : string[]) {
+		this.cancelTweens();
+
 		text = this.wrapText(text);
 
 		this.textBox.setText(text);
@@ -145,8 +148,9 @@ export class SpeechBubble extends MoveableObject {
 		this.cancelled = false;
 
 		audioManager.play(AUDIO_SPEECHBUBBLE_NEXT);
-		await tweenPromise(this.scene, this.container, {x : x - boxWidth/2, y : y - boxHeight, scaleX : 1.1, scaleY : 1.1}, 100);
 		try {
+			await tweenPromise(this.scene, this.container, {x : x - boxWidth/2, y : y - boxHeight, scaleX : 1.1, scaleY : 1.1}, 100);
+
 			await Promise.all( [
 				this.animateText(text),
 				tweenPromise(this.scene, this.container, {scaleX : 1, scaleY : 1}, 100)

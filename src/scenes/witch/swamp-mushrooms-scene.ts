@@ -11,7 +11,6 @@ import { Cursor } from '../../objects/overlays/cursor';
 import { audioManager } from '../../utils/audio-manager';
 
 export class SwampMushroomsScene extends LeftRightExitScene {
-	isUsingShell: boolean = false;
 
 	preload() {
 		super.preload();

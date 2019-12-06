@@ -17,7 +17,7 @@ export class HudScene extends Phaser.Scene {
 	base: SceneBase;
 	wideScreen: WideScreen;
 	circleTransition: CircleTransition;
-
+	isItemBagShowing: boolean = false;;
 	constructor() {
 		super({
 			key : 'hud'
@@ -30,6 +30,7 @@ export class HudScene extends Phaser.Scene {
 
 	create() {
 
+		this.isItemBagShowing = false;
 		this.wideScreen = new WideScreen(this);
 
 		const cursor = new Cursor(this);
@@ -40,6 +41,9 @@ export class HudScene extends Phaser.Scene {
 		backpack.y( 70 );
 		backpack.x( (this.game.config.width as number) - 70);
 		backpack.on('selected', () => {
+			if (this.isItemBagShowing)
+				return;
+			this.isItemBagShowing = true;
 			this.showItemBag();
 		});
 		backpack.on('moved-over', () => {
@@ -51,6 +55,7 @@ export class HudScene extends Phaser.Scene {
 
 		this.itemBag = new ItemBagOverlay(this);
 		this.itemBag.on('dismiss', () => {
+			this.isItemBagShowing = false;
 			this.hideItemBag();
 		});
 		this.itemBag.updateItems();

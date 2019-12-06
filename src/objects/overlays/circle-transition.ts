@@ -10,29 +10,31 @@ export class CircleTransition extends MoveableObject {
 		const gameWidth = this.scene.game.config.width as number;
 		const gameHeight = this.scene.game.config.height as number;
 
-		const shape = scene.add.graphics();
-    shape.setScrollFactor(0);
-    shape.fillStyle(LINE_COLOR);
-    shape.fillRect(0,0,gameWidth,gameHeight);
-		shape.depth = TOP_DEPTH;
+		if (scene.game.config.renderType !== Phaser.CANVAS) {
+			const shape = scene.add.graphics();
+			shape.setScrollFactor(0);
+			shape.fillStyle(LINE_COLOR);
+			shape.fillRect(0,0,gameWidth,gameHeight);
+			shape.depth = TOP_DEPTH;
+	
+			const shapeMask = scene.make.graphics({}, false);
+			shapeMask.setScrollFactor(0);
+	
+			shapeMask.fillStyle(0xffffff);
+			shapeMask.fillCircle(0,0, 30 * OVERSAMPLE_FACTOR);
+			shapeMask.x = gameWidth/2
+			shapeMask.y = gameHeight/2;
+			shapeMask.scale = 3;
+			this.shapeMask = shapeMask;
+			const mask = shapeMask.createGeometryMask();
+			mask.invertAlpha = true;
+	
+			shape.setMask( mask );
+		}
+		else {
+			this.shapeMask = scene.make.graphics({}, false);
+		}
 
-		// const shape = scene.add.image(0,0,'black-screen').setOrigin(0);
-    // shape.setScrollFactor(0);
-    // shape.depth = 999999999;
-
-    const shapeMask = scene.make.graphics({}, false);
-    shapeMask.setScrollFactor(0);
-
-		shapeMask.fillStyle(0xffffff);
-		shapeMask.fillCircle(0,0, 30 * OVERSAMPLE_FACTOR);
-		shapeMask.x = gameWidth/2
-		shapeMask.y = gameHeight/2;
-		shapeMask.scale = 3;
-    this.shapeMask = shapeMask;
-    const mask = shapeMask.createGeometryMask();
-    mask.invertAlpha = true;
-
-    shape.setMask( mask );
     
 	}
 	
@@ -41,13 +43,17 @@ export class CircleTransition extends MoveableObject {
 	}
 
   async close() {
-		this.shapeMask.scale = 3;
-		await tweenPromise(this.scene, this.shapeMask, {scaleX : 0, scaleY : 0}, 600);
+		if (this.scene.game.config.renderType !== Phaser.CANVAS) {
+			this.shapeMask.scale = 3;
+			await tweenPromise(this.scene, this.shapeMask, {scaleX : 0, scaleY : 0}, 600);
+		}
   }
 
   async open() {
-		this.shapeMask.scale = 0;
-		await tweenPromise(this.scene, this.shapeMask, {scaleX : 3, scaleY : 3}, 600);
+		if (this.scene.game.config.renderType !== Phaser.CANVAS) {
+			this.shapeMask.scale = 0;
+			await tweenPromise(this.scene, this.shapeMask, {scaleX : 3, scaleY : 3}, 600);
+		}
   }
 
 }

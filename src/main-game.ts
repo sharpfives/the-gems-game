@@ -24,7 +24,7 @@ export class MainGame extends Phaser.Game {
 		super({
       width : 140 * OVERSAMPLE_FACTOR, 
       height : 105 * OVERSAMPLE_FACTOR, 
-      type: Phaser.WEBGL,
+      type: Phaser.AUTO,
       parent : 'game-window',
       scene : [PreLoadScreen, HudScene, CreditsScene],
 			backgroundColor : BG_COLOR,
@@ -35,7 +35,7 @@ export class MainGame extends Phaser.Game {
         default: 'matter',
         matter: {
           gravity: { y: 0.5 },
-          debug: (PRODUCTION_MODE ? false : false)
+          debug: (PRODUCTION_MODE ? false : true)
         }
       },
       callbacks: {

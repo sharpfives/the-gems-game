@@ -84,7 +84,18 @@ class AudioManager extends EventEmitter {
     });
 
 
+	}
+	
+	async stopAllWithPath(kind: AudioData) {
+		const p = [];
+    for(let s in this.soundMap) {
+			const sound = this.soundMap[s] as Howl;
+			if (sound._src === kind.path)
+      	p.push(this.stop(s));
+		}
+		await Promise.all(p);
   }
+
 
   async stopAll(time?: number) {
     for(let s in this.soundMap) {

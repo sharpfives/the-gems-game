@@ -14,7 +14,6 @@ import { MainGame } from '../../main-game';
 import { audioManager } from '../../utils/audio-manager';
 
 export class StreamScene extends LeftRightExitScene {
-	isUsingShell: boolean;
 	deer: Deer;
 
 	preload() {
@@ -43,6 +42,7 @@ export class StreamScene extends LeftRightExitScene {
 				this.cameras.main.zoomTo(1,1000,'Linear',true);
 				this.cameras.main.pan(gameWidth/2, gameHeight/2,1000,'Linear',true);
 			}
+			deer.onOverSetIcon(me.hasShell() ? Cursor.talkKey : Cursor.questionKey);
 			deer.drinkTimer.paused = false;
 			this.isUsingShell = false;
 			audioManager.play(AUDIO_FOREST);
@@ -93,8 +93,13 @@ export class StreamScene extends LeftRightExitScene {
 			deer.onOverSetIcon(Cursor.talkKey);
 			deer.on('selected', async (x,y,double) => {
 				try {
+					if (this.isUsingShell) {
+						return;
+					}
 					const point = this.sceneLoader.exits['sing'];
 					await this.me.move(point.x, point.y, double);
+					deer.removeOverSetIcon();
+					this.isUsingShell = true;
 					noteInput = [];
 					this.me.faceRight();
 					if (!stateManager.get(STATE_DID_FIRST_STREAM_SONG)) {
@@ -104,7 +109,6 @@ export class StreamScene extends LeftRightExitScene {
 						await this.me.playAnimation('kneel-to-shell');
 					}
 					deer.drinkTimer.paused = true;
-					this.isUsingShell = true;
 					const time = 2000;
 					audioManager.stop(AUDIO_FOREST);
 					audioManager.play(AUDIO_NOTE_PAD);

@@ -1,7 +1,7 @@
 'use strict';
 
 import * as Phaser from 'phaser';
-import { tweenPromise, OVERSAMPLE_FACTOR, sleep, DEBUG_SCENE, STATE_CAVE_OPEN, ITEM_ACORN, setNumOfItem, ITEM_SHELL, AUDIO_BIRD_NOTE_1, AUDIO_BIRD_NOTE_2, AUDIO_BIRD_NOTE_3, AUDIO_BIRD_NOTE_4, AUDIO_NIGHT_BACKGROUND, AUDIO_NOTE_1, AUDIO_NOTE_RUMBLE, AUDIO_CAVE_OPEN, STATE_DID_FIRST_CAVE_SONG, InputMode } from '../../globals';
+import { tweenPromise, OVERSAMPLE_FACTOR, sleep, DEBUG_SCENE, STATE_CAVE_OPEN, ITEM_ACORN, setNumOfItem, ITEM_SHELL, AUDIO_BIRD_NOTE_1, AUDIO_BIRD_NOTE_2, AUDIO_BIRD_NOTE_3, AUDIO_BIRD_NOTE_4, AUDIO_NIGHT_BACKGROUND, AUDIO_NOTE_1, AUDIO_NOTE_RUMBLE, AUDIO_CAVE_OPEN, STATE_DID_FIRST_CAVE_SONG, InputMode, AUDIO_FOOTSTEPS } from '../../globals';
 import { LeftRightExitScene } from '../left-right-exit-scene';
 import { CaveFront } from '../../objects/areas/cave-front';
 import { Cursor } from '../../objects/overlays/cursor';
@@ -12,7 +12,6 @@ import { audioManager } from '../../utils/audio-manager';
 
 export class CaveFrontScene extends LeftRightExitScene {
 	light: Phaser.GameObjects.Graphics;
-	isUsingShell: boolean;
 
 	constructor() {
 		super();
@@ -47,10 +46,12 @@ export class CaveFrontScene extends LeftRightExitScene {
 		me.on('will-move', () => {
 			if (this.isUsingShell) {
 				staff.cancel();
+				tweenPromise(this, staff.getGameObject(), {alpha : 0}, 1000);
 				this.cameras.main.zoomTo(1,1000,'Linear',true);
 				this.cameras.main.pan(gameWidth/2, gameHeight/2,1000,'Linear',true);
 			}
 			this.isUsingShell = false;
+			bird.onOverSetIcon(me.hasShell() ? Cursor.talkKey : Cursor.questionKey);
 			cave.onOverSetIcon(stateManager.get(STATE_CAVE_OPEN) ? Cursor.handKey : Cursor.questionKey);
 		});
 
@@ -111,8 +112,13 @@ export class CaveFrontScene extends LeftRightExitScene {
 		bird.restLoop();
 		bird.onOverSetIcon(me.hasShell() ? Cursor.talkKey : Cursor.questionKey);
 		bird.on('selected', async (x,y,double) => {
+			if (this.isUsingShell) {
+				return;
+			}
 			try {
+
 				await me.move(birdPoint.x - 60, birdPoint.y + 100,double);
+				audioManager.stop(AUDIO_FOOTSTEPS);
 				me.faceRight();
 				bird.tweet(2);
 				if (stateManager.get(STATE_CAVE_OPEN)) {
@@ -123,12 +129,13 @@ export class CaveFrontScene extends LeftRightExitScene {
 					});
 				}
 				else if (me.hasShell()) {
+					this.isUsingShell = true;
 					noteInput = [];
-					await this.startConversation(bird, {
-						convo : [
-							{ text : "let's boogie"}
-						]
-					});
+					// await this.startConversation(bird, {
+					// 	convo : [
+					// 		{ text : "let's boogie"}
+					// 	]
+					// });
 					me.faceLeft();
 					if (!stateManager.get(STATE_DID_FIRST_CAVE_SONG)) {
 						this.setInputMode(InputMode.Disabled);
@@ -137,7 +144,6 @@ export class CaveFrontScene extends LeftRightExitScene {
 						await this.me.playAnimation('kneel-to-shell');
 					}
 					bird.removeOverSetIcon();
-					this.isUsingShell = true;
 					cave.removeOverSetIcon();
 					const time = 1500;
 					this.cameras.main.zoomTo(1.1,time,undefined,true);
