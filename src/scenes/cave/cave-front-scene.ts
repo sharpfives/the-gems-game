@@ -23,7 +23,7 @@ export class CaveFrontScene extends LeftRightExitScene {
 		SongBird.loadResources(this);
 
 		if (DEBUG_SCENE) {
-			stateManager.set(STATE_CAVE_OPEN, false);
+			stateManager.set(STATE_CAVE_OPEN, true);
 			stateManager.set(STATE_DID_FIRST_CAVE_SONG, false);
 
 			setNumOfItem(ITEM_ACORN,1);

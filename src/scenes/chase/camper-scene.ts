@@ -88,7 +88,7 @@ export class CamperScene extends LeftRightExitScene {
 							{ text : "did you know that this place"},
 							{ text : "is like"},
 							{ text : "magical?"},
-							{ text : "these red gems have me been floating around"},
+							{ text : "these red gems have been floating around"},
 							{ text : "and,"},
 							{ text : "maybe i'm just wasted,"},
 							{ text : "but i think they have powers."},
@@ -98,7 +98,7 @@ export class CamperScene extends LeftRightExitScene {
 							{ text : "A VERY MYSTICAL DEER, my friend."},
 							{ text : "she spoke to me."},
 							{ text : "she whispered:"},
-							{ text : "\"to create musical fusion is the ultimate goal\"?"},
+							{ text : "\"to create musical fusion is the ultimate goal...\""},
 							{ text : "to which i said:"},
 							{ text : "\"righteous, deer friend\", and she ran away."},
 							{ text : "infinite wisdom, man."},
@@ -146,142 +146,6 @@ export class CamperScene extends LeftRightExitScene {
 
 				}
 				
-				// const oddRequestPart = {
-				// 	"that's an odd request." : [
-				// 		{
-				// 			text : "not really."
-				// 		},
-				// 		{
-				// 			text : "i collect them."
-				// 		},
-				// 		{
-				// 			text: "people collect lots of things."
-				// 		},
-				// 		{
-				// 			text: "my thing just happens to be acorns."
-				// 		},
-				// 		{
-				// 			text : "why am i collecting them?"
-				// 		},
-				// 		{
-				// 			text : "that's none of your business!"
-				// 		},
-				// 		{
-				// 			text : "nothing wrong with collecting some perfectly fine acorns."
-				// 		},
-				// 		{
-				// 			end : 0
-				// 		}
-				// 	]
-				// };
-				// const offerAcornsPart = [
-				// 	{
-				// 		text : "oh good! i need 10 more to finish my collection.",
-				// 	},
-				// 	{
-				// 		text : "can i have yours?",
-				// 		responses : [
-				// 			{
-				// 				[(numAcorns === 10 ? "sure, weirdo" : "okay")] : 
-				// 					(numAcorns === 10 ? [
-				// 						{
-				// 							text : "wow you're the best!"
-				// 						},
-				// 						{
-				// 							text : "aside from the weirdo comment, but i'll take it."
-				// 						},
-				// 						{
-				// 							text : "say"
-				// 						},
-				// 						{
-				// 							text : "since you were a good sport, take this thing"
-				// 						}
-				// 					] : [
-				// 						{
-				// 							text : (numAcorns > 0 ? "oh, you only have " + numAcorns : "umm.. you have exactly zero acorns. seriously man?")
-				// 						},
-				// 						{
-				// 							text : (numAcorns == 0 ? "come back when you're feeling less dickish." : "come back when you have the rest")
-				// 						},
-				// 					]
-				// 				)
-				// 			},
-				// 			{
-				// 				"nah i'm gonna hold onto them" : [
-				// 					{
-				// 						text : "man"
-				// 					},
-				// 					{
-				// 						text : "rude"
-				// 					},
-				// 					{
-				// 						text : "well if you ever decided you dont want em just bring them back here."
-				// 					},
-				// 					{
-				// 						text : "bye"
-				// 					}
-				// 				]
-				// 			}
-				// 		]
-				// 	}
-				// ];
-
-				// if (!stateManager.get(STATE_DID_MEET_ACORN_GUY)) {
-				// 	stateManager.set(STATE_DID_MEET_ACORN_GUY,true);
-				// 	this.startConversation(camper, {
-				// 		convo : [
-				// 			{
-				// 				text : "greetings traveler!",
-				// 			},
-				// 			{
-				// 				text: "hey, do you have any acorns?",
-				// 				responses: [
-				// 					oddRequestPart,
-				// 					{
-				// 						"i have a few" : offerAcornsPart
-				// 					},
-				// 					{
-				// 						"nope" : [
-				// 							{
-				// 								text : "darn. i need 10 more to finish my collection."
-				// 							},
-				// 							{
-				// 								text : "if you find some, can you be a pal and bring em to me?"
-				// 							}
-				// 						]
-				// 					}
-				// 				],
-
-				// 			}
-				// 		]
-				// 	});
-				// }
-				// else {
-				// 	this.startConversation(camper, {
-				// 		convo : [
-				// 			{
-				// 				text : "you're back! find any acorns!",
-				// 				responses: [
-				// 					oddRequestPart,
-				// 					{
-				// 						"yep" : offerAcornsPart
-				// 					},
-				// 					{
-				// 						"nope" : [
-				// 							{
-				// 								text : "darn. i need 10 more to finish my collection."
-				// 							},
-				// 							{
-				// 								text : "well, if you find any, let me know."
-				// 							}
-				// 						]
-				// 					}
-				// 				],
-
-				// 			}
-				// 		]
-				// 	});
-				// }
 			}
 			catch(e){}
 			

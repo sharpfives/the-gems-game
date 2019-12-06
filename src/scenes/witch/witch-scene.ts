@@ -143,7 +143,7 @@ export class WitchScene extends LeftRightExitScene {
 							{ text: "you would never ask me about that" },
 							{ text: "you'd just assume i listen to some goth bands." },
 							{ text: "..." },
-							{ text: "well since you're sterotyping me" },
+							{ text: "well since you're stereotyping me" },
 							{ text: "you're probably thinking i'll take some of your mushrooms" },
 							{ text: "and make you some strange magic potion" },
 							{ text: "that'll give you a strategic advantage and help you beat this game" },

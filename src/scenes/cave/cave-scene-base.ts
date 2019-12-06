@@ -79,8 +79,12 @@ export class CaveSceneBase extends LeftRightExitScene {
 		const sceneWidth = this.game.config.width as number;
 
 		const lightTorch = async (torch: Torch) => {
+			if (torch.isLit)
+				return;
+			
 			try {
 				await me.walkTo(torch.x(), torch.y());
+				torch.isLit = true;
 				torch.playAnimation('play');
 				torch.emit('lit');
 				torch.removeOverSetIcon();
@@ -138,14 +142,16 @@ export class CaveSceneBase extends LeftRightExitScene {
 
 		badguy.setContactHandler(Guy, async (guy: Guy) => {
 			console.log('HIT HEEEEEM');
-			this.setInputMode(InputMode.Disabled);
 			guy.cancelTweens();
+			this.setInputMode(InputMode.Disabled);
+
 			if (guy.x() > badguy.x()) {
 				guy.faceRight();
 			}
 			guy.x(badguy.x() + (guy.x() > badguy.x() ? 1 : -1) * 20 * OVERSAMPLE_FACTOR);
 			guy.y(badguy.y() + 1 * OVERSAMPLE_FACTOR);
 			guy.playAnimation('rest');
+			guy.getGameObject().setVelocity(0);
 			await this.wakeBadGuy(badguy);
 			await tweenPromise(this, this.light, {scaleX : 0, scaleY : 0}, 500);
 			this.exitScene('exit');

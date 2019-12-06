@@ -32,6 +32,8 @@ export class CaveScene3 extends CaveSceneBase {
 
 		super.create(data);
 
+		this.minYForWalk = 65 * OVERSAMPLE_FACTOR;
+
 		this.removeLeftExit();
 		
 		const me = this.me;
@@ -60,11 +62,8 @@ export class CaveScene3 extends CaveSceneBase {
 			redPiece.onOverSetIcon(Cursor.questionKey);
 			cage.setContactHandler(Arrow, (arrow: Arrow) => {
 				const mag = -14;
-				// cage.getGameObject().applyForce(new Phaser.Math.Vector2(-100,0));
 				arrow.destroy();
-				// cage.getGameObject().setVelocityY(0);
 				cage.getGameObject().setVelocityX(mag);
-				// cage.getGameObject().setVelocityX((cage.getGameObject().body as any).velocity.x + mag * Math.cos(angle));
 			});
 			cage.getGameObject().setFixedRotation();
 			rope1.attach(hangPoint.x-30,hangPoint.y,cage.getGameObject(), {x: -30, y: -35});
@@ -80,7 +79,6 @@ export class CaveScene3 extends CaveSceneBase {
 				redPiece.onOverSetIcon(Cursor.handKey);
 				redPiece.on('selected', async () => {
 					try {
-						// await me.move(redPiece.x(), redPiece.y(), false);
 						me.pickUp(redPiece);
 						setPickUpRedPiece('Cave3',redPieceName);
 					} catch (e) {}
@@ -98,7 +96,7 @@ export class CaveScene3 extends CaveSceneBase {
 			rope2.attach(hangPoint.x+30,hangPoint.y,cage.getGameObject(), {x: 30, y: -35});
 	
 			const sceneWidth = this.game.config.width as number;
-			this.matter.add.rectangle(sceneWidth, 85 *OVERSAMPLE_FACTOR, 150 * OVERSAMPLE_FACTOR, 10, { isStatic: true });
+			this.matter.add.rectangle(sceneWidth, 85 *OVERSAMPLE_FACTOR, 152 * OVERSAMPLE_FACTOR, 10, { isStatic: true });
 
 		}
 		

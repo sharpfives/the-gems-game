@@ -92,7 +92,7 @@ export class TrainingScene extends SceneBase {
 			convo : [
 				{ text: "alright, nancy." },
 				{ text: "here's what's gonna happen."},
-				{ text: "start by clicking down on yourself and then draging backwards."},
+				{ text: "start by clicking down on yourself and then dragging backwards."},
 				{ text: "just like you're pulling back on the bow."},
 				{ text: "try it."},
 				{ end : 0}
@@ -220,7 +220,7 @@ export class TrainingScene extends SceneBase {
 					convo : [
 						{ text : "well look at you, princess."},
 						{ text : "a regular john wayne."},
-						{ text : "let's see how you can some faster movement."},
+						{ text : "let's see how you do with some faster movement."},
 						{ text : "hit the targets before the timers run out." }
 					]
 				});

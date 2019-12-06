@@ -72,8 +72,8 @@ export class PreLoadScreen extends Phaser.Scene {
 				// game.sceneMap.loadScene('Chase','start',this);
 
 				// game.sceneMap.loadScene('Cave','start',this);
-				// game.sceneMap.loadScene('Cave2','left',this);
-				// game.sceneMap.loadScene('Cave3','right',this);
+				// game.sceneMap.loadScene('Cave2','right',this);
+				game.sceneMap.loadScene('Cave3','right',this);
 				// game.sceneMap.loadScene('CaveFront','right',this);
 
 				// game.sceneMap.loadScene('Spirit','start',this);
@@ -81,7 +81,7 @@ export class PreLoadScreen extends Phaser.Scene {
 
 
 				// game.sceneMap.loadScene('BirdPowerline','right',this);
-				game.sceneMap.loadScene('SwampMushroom','right',this);
+				// game.sceneMap.loadScene('SwampMushroom','right',this);
 				// game.sceneMap.loadScene('SimpleLine','right',this);
 				// game.sceneMap.loadScene('Boss','left',this);
 				// game.sceneMap.loadScene('BirdPosts','right',this);

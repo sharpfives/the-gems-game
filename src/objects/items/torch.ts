@@ -4,6 +4,8 @@ import { Cursor } from '../overlays/cursor';
 import { OVERSAMPLE_FACTOR } from '../../globals';
 
 export class Torch extends Engageable {
+	isLit = false;
+	
 	constructor(scene: Phaser.Scene, x: number, y: number, name, shapes?, yOffset?) {
 		super(scene,x,y,Torch.name,shapes, yOffset);
 		this.setRepeat('play');

@@ -82,7 +82,7 @@ export class SpiritScene extends EnterFromDoorScene {
 			{ text : "heck" },
 			{ text : "i'd be surprised if you get half that" },
 			{ text : "well anyway" },
-			{ text : "whenever you're ready, dorethy" },
+			{ text : "whenever you're ready, dorothy" },
 			{ 
 				text : "see these doors?",
 				key : "doors"

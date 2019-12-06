@@ -13,6 +13,7 @@ import { SceneBase } from "../../scenes/scene-base";
 
 export class Guy extends Character {
 	private intents: Promise<any>[] = [];
+	thingsPickedUp: Set<MoveableObject> = new Set<MoveableObject>();
 
 	constructor(scene : Phaser.Scene, x : number, y : number) {
 		super(scene,x,y,'guy');
@@ -97,8 +98,13 @@ export class Guy extends Character {
 			return;
 		}
 
+		if (this.thingsPickedUp.has(thing)){
+			return;
+		}
+
 		// try {
 			await this.walkTo(thing.x()-20, thing.y()-20);
+			this.thingsPickedUp.add(thing);
 			(this.scene as SceneBase).setInputMode(InputMode.Disabled);
 			this.faceRight();
 			await this.playAnimation('kneel');
