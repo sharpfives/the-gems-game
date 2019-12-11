@@ -18,6 +18,7 @@ export class Protect1Scene extends LeftRightExitScene {
 	num1stBirds: number = 4;
 	didRoundOfBadGuys = false;
 	num1stBadGuys: number = 3;
+	didDoneSequence = false;
 
 	birdCount: number = 0;
 	badGuyCount = 0;
@@ -242,6 +243,10 @@ export class Protect1Scene extends LeftRightExitScene {
 	}
 
 	doDoneSequence() {
+		if (this.didDoneSequence) {
+			return;
+		}
+		this.didDoneSequence = true;
 		(this.sceneLoader.areas['left'] as ExitArea).enabled = true;
 		audioManager.stop(AUDIO_PROTECT_LOOP);
 		stateManager.set(STATE_DID_PROTECT_SCENE, true);

@@ -12,6 +12,8 @@ import { stateManager } from "../utils/game-state-manager";
 export class EndingScene extends EnterFromDoorScene {
 	spirit: Spirit;
 	recordPlayer: RecordPlayer;
+	originalX: number;
+	originalY: number;
 	constructor() {
 		super();
 	}
@@ -26,6 +28,10 @@ export class EndingScene extends EnterFromDoorScene {
 		super.create(data);
 		const me = this.me;
 		me.on('entered', async (door: Door) => {
+			this.setInputMode(InputMode.Disabled);
+			this.originalX = this.me.x();
+			this.originalY = this.me.y();
+
 			me.faceRight();
 			this.createSmokeCloud(door.x(), door.y());
 			door.destroy();
@@ -62,6 +68,12 @@ export class EndingScene extends EnterFromDoorScene {
 
 	async doConvo() {
 		const spirit = this.spirit;
+		const me = this.me;
+
+		me.x(this.originalX);
+		me.y(this.originalY);
+
+		me.faceRight();
 		await this.startConversation(spirit, {
 			convo : [
 				{ text: "::ahem::" }

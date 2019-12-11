@@ -50,7 +50,7 @@ export class PreLoadScreen extends Phaser.Scene {
 
 				// game.sceneMap.loadScene('Resume','start',this);
 
-				// game.sceneMap.loadScene('Jumpy','start',this);
+				game.sceneMap.loadScene('Jumpy','start',this);
 				// game.sceneMap.loadScene('HangerDrag','left',this);
 
 				// game.sceneMap.loadScene('SingleHostage','left',this);
@@ -73,7 +73,7 @@ export class PreLoadScreen extends Phaser.Scene {
 
 				// game.sceneMap.loadScene('Cave','start',this);
 				// game.sceneMap.loadScene('Cave2','right',this);
-				game.sceneMap.loadScene('Cave3','right',this);
+				// game.sceneMap.loadScene('Cave3','right',this);
 				// game.sceneMap.loadScene('CaveFront','right',this);
 
 				// game.sceneMap.loadScene('Spirit','start',this);
