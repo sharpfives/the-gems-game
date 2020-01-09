@@ -37,7 +37,10 @@ export class PreLoadScreen extends Phaser.Scene {
 				const currentScene = stateManager.get(Globals.STATE_CURRENT_SCENE);
 				const currentExit = stateManager.get(Globals.STATE_CURRENT_EXIT);
 
-				if (stateManager.get(Globals.STATE_DID_START_GAME) && 
+				if (!this.sys.game.device.browser.chrome) {
+					game.sceneMap.loadScene('Unsupported','start',this);
+				}
+				else if (stateManager.get(Globals.STATE_DID_START_GAME) && 
 					(Globals.SHOW_RESUME )) {
 					game.sceneMap.loadScene('Resume','start',this);
 				}
@@ -50,7 +53,7 @@ export class PreLoadScreen extends Phaser.Scene {
 
 				// game.sceneMap.loadScene('Resume','start',this);
 
-				game.sceneMap.loadScene('Jumpy','start',this);
+				// game.sceneMap.loadScene('Jumpy','start',this);
 				// game.sceneMap.loadScene('HangerDrag','left',this);
 
 				// game.sceneMap.loadScene('SingleHostage','left',this);
@@ -83,7 +86,7 @@ export class PreLoadScreen extends Phaser.Scene {
 				// game.sceneMap.loadScene('BirdPowerline','right',this);
 				// game.sceneMap.loadScene('SwampMushroom','right',this);
 				// game.sceneMap.loadScene('SimpleLine','right',this);
-				// game.sceneMap.loadScene('Boss','left',this);
+				game.sceneMap.loadScene('Boss','left',this);
 				// game.sceneMap.loadScene('BirdPosts','right',this);
 
 				// game.sceneMap.loadScene('Witch','right',this);

@@ -12,6 +12,10 @@
       "type" : "resume",
       "config" : "resources/config/scenes/resume/scene.json"
 		},
+		"Unsupported" : {
+      "type" : "unsupported",
+      "config" : "resources/config/scenes/resume/scene.json"
+		},
 		"Ending" : {
       "type" : "ending",
       "config" : "resources/config/scenes/ending/scene.json"
@@ -493,6 +497,16 @@
       },
       "to" : {
         "scene" : "Resume",
+        "exit" : "start"
+      }
+		},
+		{
+      "from" : {
+        "scene" : "Unsupported",
+        "exit" : "start"
+      },
+      "to" : {
+        "scene" : "Unsupported",
         "exit" : "start"
       }
 		}

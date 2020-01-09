@@ -15,6 +15,7 @@ import { HangerTestScene } from './sandbox/hanger-test-scene';
 import { stateManager } from './utils/game-state-manager';
 import { HudScene } from './scenes/hud-scene';
 import { CreditsScene } from './scenes/credits-scene';
+import { UnsupportedScene } from './scenes/unsupported-scene';
 
 export class MainGame extends Phaser.Game {
 
@@ -35,7 +36,7 @@ export class MainGame extends Phaser.Game {
         default: 'matter',
         matter: {
           gravity: { y: 0.5 },
-          debug: (PRODUCTION_MODE ? false : true)
+          debug: (PRODUCTION_MODE ? false : false)
         }
       },
       callbacks: {

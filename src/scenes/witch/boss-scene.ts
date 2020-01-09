@@ -22,7 +22,7 @@ export class BossScene extends LeftRightExitScene {
 		audioManager.preload(AUDIO_BOSS_START);
 
 		if (DEBUG_SCENE) {
-			stateManager.set(STATE_DID_BEAT_BOSS, true);
+			stateManager.set(STATE_DID_BEAT_BOSS, false);
 			setNumOfItem(ITEM_BOW,1);
 			setNumOfItem(ITEM_FEATHER,1);
 		}

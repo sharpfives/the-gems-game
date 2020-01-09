@@ -30,6 +30,7 @@ import { SimpleLineScene } from "../scenes/witch/simple-line-scene";
 import { WitchScene } from "../scenes/witch/witch-scene";
 import { BirdPostsScene } from "../scenes/witch/bird-posts-scene";
 import { SquirrelScene } from "../scenes/chase/squirrel-scene";
+import { UnsupportedScene } from "../scenes/unsupported-scene";
 
 class SceneFactory {
 	private scenes: {};
@@ -67,7 +68,7 @@ class SceneFactory {
 			"witch" : WitchScene,
 			"birdPosts" : BirdPostsScene,
 			"squirrel" : SquirrelScene,
-
+			"unsupported" : UnsupportedScene
     }
   }
 
