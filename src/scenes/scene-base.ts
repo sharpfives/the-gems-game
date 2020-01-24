@@ -594,7 +594,9 @@ export class SceneBase extends Phaser.Scene {
 				}
 				if (typeof text !== 'undefined') {
 					speechBubble.cancelled = true;
-					speechBubble.show(who.x() + who.speechBubbleOffset.x, who.y() + who.speechBubbleOffset.y - who.getAnimationGameObject().height/2 * OVERSAMPLE_FACTOR / who.getScaleFactor(),text,responses);
+					speechBubble.show(who.x() + who.speechBubbleOffset.x, who.y() + who.speechBubbleOffset.y - who.getAnimationGameObject().height/2 * OVERSAMPLE_FACTOR / who.getScaleFactor(),text,responses).finally( () => {
+						speechBubble.isReady = true;
+					});
 					if (speechBubble.y() - speechBubble.boxHeight/2 < 0) {
 						this.cameras.main.pan(who.x(), (speechBubble.y() - speechBubble.boxHeight - 20) + (this.game.config.height as number)/2,2000,'Expo.easeOut', true);
 					}

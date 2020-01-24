@@ -18,6 +18,7 @@ export class SpeechBubble extends MoveableObject {
 	boxWidth: number;
 	boxHeight: number;
 	cancelled: boolean = false;
+	isReady = true;
 
 	constructor(scene : Phaser.Scene, x : number, y : number) {
 		super(scene,x,y,'');
@@ -50,6 +51,13 @@ export class SpeechBubble extends MoveableObject {
 
 	public async show(x: number, y: number, text: string, responses? : string[]) {
 		this.cancelTweens();
+
+		while(!this.isReady) {
+			await sleep(100);
+		}
+
+		this.isReady = false;
+		this.cancelled = false;
 
 		text = this.wrapText(text);
 
@@ -145,7 +153,6 @@ export class SpeechBubble extends MoveableObject {
 
 		this.boxWidth = boxWidth;
 		this.boxHeight = boxHeight;
-		this.cancelled = false;
 
 		audioManager.play(AUDIO_SPEECHBUBBLE_NEXT);
 		try {
@@ -159,10 +166,16 @@ export class SpeechBubble extends MoveableObject {
 				this.setText(text);
 			}
 		}
-		catch (e) {}
+		catch (e) {
+			this.setText(text);
+			this.container.setScale(1);
+		}
+
 		for (let r in responses) {
 			this.responseTextBoxes[r].alpha = 1;
 		}
+
+		this.isReady = true;
 	}
 
 	wrapText(text: string) {
