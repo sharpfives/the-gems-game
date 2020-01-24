@@ -1,7 +1,7 @@
 'use strict';
 
 import { LeftRightExitScene } from '../left-right-exit-scene';
-import { tweenPromise, sleep, OVERSAMPLE_FACTOR, LINE_COLOR, InputMode, didKillBird, setDidKillBird, didPickUpRedPiece, DEBUG_SCENE, STATE_LAST_SCENE, STATE_LAST_EXIT } from '../../globals';
+import { tweenPromise, sleep, OVERSAMPLE_FACTOR, LINE_COLOR, InputMode, didKillBird, setDidKillBird, didPickUpRedPiece, DEBUG_SCENE, STATE_LAST_SCENE, STATE_LAST_EXIT, AUDIO_BIRD_FLY } from '../../globals';
 import { Rope } from '../../objects/rope';
 import { RopePiece } from '../../objects/rope-piece';
 import { Bird } from '../../objects/characters/bird';
@@ -83,15 +83,13 @@ export class BirdPowerlineScene extends LeftRightExitScene {
 			}
 			else {
 				bird = new Bird(this, pieceToAttach.x(),pieceToAttach.y());
-				bird.setContactHandler(Arrow, (arrow) => {
+				bird.setContactHandler(Arrow, async (arrow) => {
 					bird.isDead = true;
 					setDidKillBird(this.name,birdName);
 					arrow.destroy();
 					bird.breakIntoParticles();
-					// bird.cancelTweens();
-					// this.tweens.killTweensOf(bird.getGameObject());
-					audioManager.stop(bird.flyAudioKey);
-					// bird.destroy();
+					await sleep(100);
+					bird.destroy();
 				});
 				bird.setContactHandler(Guy, async (guy) => {
 					if (bird.isDead)
@@ -103,7 +101,6 @@ export class BirdPowerlineScene extends LeftRightExitScene {
 					const lastSceneName = stateManager.get(STATE_LAST_SCENE);
 					const lastExitName = stateManager.get(STATE_LAST_EXIT);
 					(this.game as MainGame).sceneMap.loadScene(lastSceneName,lastExitName,this);
-					// (this.game as MainGame).sceneMap.loadScene('Spirit','died',this);
 				});
 				bird.on('red-piece', (x,y) => {
 					this.makeRedPiece(x,y,birdName);
@@ -116,11 +113,15 @@ export class BirdPowerlineScene extends LeftRightExitScene {
 				bird.attach(pieceToAttach, {x : 0, y : -20});
 			}
 		}
-			
 
 		const sceneWidth = this.game.config.width as number
 		this.matter.add.rectangle(sceneWidth/2, 80 * OVERSAMPLE_FACTOR, sceneWidth, 10, { isStatic: true });
 
+	}
+
+	async exitScene(name) {
+		audioManager.stopAllWithPath(AUDIO_BIRD_FLY);
+		await super.exitScene(name);
 	}
 
 	update() {

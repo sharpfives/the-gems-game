@@ -198,6 +198,7 @@ export class SceneBase extends Phaser.Scene {
 			const anim = bow.getAnimation('pull');
 			bow.sprite.anims.pause(anim.frames[0]);
 			audioManager.play(AUDIO_BOW_PULL);
+			audioManager.stop(AUDIO_FOOTSTEPS,100);
 		});
 		control.on('release', async (angle) => {
 			console.log('Control release');
