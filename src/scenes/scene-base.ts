@@ -217,6 +217,7 @@ export class SceneBase extends Phaser.Scene {
 			this.isUsingBow = false;
 			me.playAnimation('rest');
 			me.emit('shot-arrow', arrow);
+			audioManager.stop(AUDIO_FOOTSTEPS,100);
 		});
 		control.on('change', (angle, percent) => {
 			console.log('Control change');
