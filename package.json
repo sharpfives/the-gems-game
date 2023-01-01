@@ -10,21 +10,21 @@
   "author": "sharpfives",
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^5.1.0",
+    "copy-webpack-plugin": "^11.0.0",
     "electron": "^5.0.2",
     "expose-loader": "0.7.5",
-    "html-webpack-plugin": "^3.2.0",
-    "ts-loader": "^6.0.4",
+    "html-webpack-plugin": "^5.5.0",
+    "ts-loader": "^9.4.2",
     "typescript": "3.4.5",
-    "webpack": "^4.35.3",
-    "webpack-cli": "3.3.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "5.0.1",
     "webpack-dev-server": "^3.7.2",
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "eventemitter3": "^4.0.0",
     "howler": "^2.1.2",
-    "phaser": "^3.19.0",
+    "phaser": "^3.55.2",
     "phaser-matter-collision-plugin": "^0.10.2"
   }
 }
